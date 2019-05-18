@@ -1,1 +1,193 @@
-Calander.md
+html, body {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-color:Lavender;
+	width:520px;
+	text-align:center
+}
+article {
+	word-wrap: break-word;
+	padding: 2px;
+	overflow: hidden;
+	margin-bottom: 5px;
+	background-color:Lavender;
+	 -moz-box-shadow: 0px 5px 12px rgba(000,000,000,0.5);
+	 -webkit-box-shadow:0px 5px 12px rgba(000,000,000,0.5);
+	 box-shadow:0px 5px 12px rgba(000,000,000,0.5);
+}
+table {
+   text-align:center;
+   width:99%;
+   border-spacing:0;
+   border:2px solid green;
+   margin: 0;
+}
+td {
+   text-align:center;
+}
+font {
+   font-size:16px;
+   color:Teal;
+}
+button {
+   font-weight:bold;
+}
+#y {
+     background-color:transparent;
+     text-shadow:Maroon 1px 1px 1px;
+	 color:LawnGreen;
+	 font-size:18px;
+}
+#z,
+#todate,
+#tomonth,
+#month {
+	 color:Azure;
+	 font-size:19px;
+	 text-shadow:Maroon 1px 1px 1px;
+	 background-color:transparent;
+	 width:100px;
+}
+#full {
+	 color:Azure;
+	 width:90%;
+	 font-size:19px;
+	 text-shadow:Maroon 1px 1px 1px;
+	 background-color:transparent;
+}
+#holyday {
+	 border:1px solid DarkCyan;
+	 background-color:DarkCyan;
+	 text-shadow:MediumSeaGreen 1px 1px 1px;
+	 color:Maroon;
+	 font-size:13px;
+}
+#hol {
+     background-color:transparent;
+	 text-shadow:Black 1px 1px 1px;
+	 color:#3CB371;
+	 font-size:18px;
+}
+#date {
+     color:Maroon;
+	 background-color:DarkCyan;
+	 text-shadow:MediumSeaGreen 1px 1px 1px;
+	 font-size:15px;
+}
+#teal {
+     background-color:teal;
+}
+#borderright {
+     border-right:2px solid teal;
+}
+#bordertop {
+     border-top:2px solid teal;
+}
+#borderleft {
+     border-left:2px solid teal;
+}
+#bottomright {
+      border-bottom:2px solid teal;
+	  border-right:2px solid teal;
+}
+#bottomrighttop {
+      border-bottom:2px solid teal;
+	  border-right:2px solid teal;
+	  border-top:2px solid teal;
+}
+#borderall {
+      border-bottom:2px solid teal;
+	  border-right:2px solid teal;
+	  border-top:2px solid teal;
+	  border-left:2px solid teal;
+}
+#sunday {
+     background-color:#FF1493;
+	 border-top:2px solid teal;
+	 border-bottom:2px solid teal;
+	 border-right:2px solid teal;
+}
+#satur {
+     background-color:#FFDAB9;
+	 border-top:2px solid teal;
+	 border-bottom:2px solid teal;
+}
+#days {
+    background-color:#FFDAB9;
+	border-top:2px solid teal;
+	border-bottom:2px solid teal;
+	border-right:2px solid teal;
+}
+#pmon,
+#nmon {
+	margin: 0;
+	padding: 0;
+	background-color:transparent;
+	color:yellow;
+	font-size:18px;
+    width:100px;	
+}
+#ka, #aa, #ab, #ac, #ad, #ae, #af, #ag, #ah, #ai, #aj, #ak, #al, #am, #an, #ao, #ap, #aq, #ar, #as, #at, #au, #av, #aw, #ax, #ay, #az, #ba, #bb, #bc, #bd, #be, #bf, #bg, #bh,
+#bi, #bj, #bk, #bl, #bm, #bn, #bo, #bp {
+	margin: 0;
+	padding: 0;
+	background-color:transparent;
+	width:59px;
+	height:62px;
+	font-size:20px;
+}
+#aaa {
+	margin: 0;
+	padding: 0;
+	background-color:transparent;
+	width:59px;
+	height:124px;
+}
+#kb {
+    width:40.6px;
+}
+#enyear,
+#asyr {
+    width:100px;
+	color:LightYellow;
+	text-shadow:Maroon 1px 1px 1px;
+	background-color:transparent;
+	font-size:20px;
+}
+.tooltip {
+   position: relative;
+   display: inline-block;
+}
+.tooltip .tooltiptext {
+   visibility: hidden;
+   width: 200px;
+   background-color: #555;
+   color: Azure;
+   text-align: center;
+   border-radius: 6px;
+   padding: 0px 0;
+   position: absolute;
+   z-index: 0;
+   bottom: 125%;
+   margin-left: 0px;
+   opacity: 0;
+   transition: opacity 1s;
+}
+.tooltip:hover .tooltiptext {
+   visibility: visible;
+   opacity: 1;
+}
+#holya, #holyb, #holyc, #holyh, #holyi, #holyj, #holyo, #holyp, #holyq, #holyv, #holyw, #holyx, #holybc, #holybd,
+#holybe, #holybj, #holybk, #holybl {
+   left: 0%;
+}
+#holye, #holyf, #holyg, #holyl, #holym, #holyn, #holys, #holyt, #holyu, #holyz, #holyba, #holybb, #holybg, #holybh,
+#holybi, #holybn, #holybo, #holybp {
+   left: -400%;
+}
+#holyd, #holyk, #holyr, #holyy,
+#holybf, #holybm {
+   left: -70%;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<style>
+html, body {
+	margin-top: 0;
+        margin-left: 2;
+	padding: 0;
+}
+
+body {
+	background-color:transparent;
+	width:300px;
+	text-align:center
+}
+article {
+	word-wrap: break-word;
+	padding: 2px;
+	overflow: hidden;
+	margin-bottom: 5px;
+	background-color:Lavender;
+	 -moz-box-shadow: 0px 5px 12px rgba(000,000,000,0.5);
+	 -webkit-box-shadow:0px 5px 12px rgba(000,000,000,0.5);
+	 box-shadow:0px 5px 12px rgba(000,000,000,0.5);
+}
+table {
+   text-align:center;
+   width:99%;
+   border-spacing:0;
+   border:2px solid green;
+   margin: 0;
+}
+td {
+   text-align:center;
+}
+#aa {
+     color:Maroon;
+	 background-color:Cyan;
+	 text-shadow:MediumSeaGreen 1px 1px 1px;
+	 font-size:26px;
+	 width:280px;
+	height:140px;
+	margin: 0;
+	padding: 0;
+}
+
+#teal {
+     background-color:green;
+}
+#border {
+     border-right:2px solid teal;
+     border-top:2px solid teal;
+     border-left:2px solid teal;
+      border-bottom:2px solid teal;
+}
+</style>
+<body><article><table><tr id='teal'>
+<td colspan="7" id='bordertop'>
+<button id="aa"><a>অসমীয়া লেখেৰে</a>
+</br>জেঠ মাহৰ <a id="Date"></a> তাৰিখ
+</br>১৪২৬ ভাস্কৰাব্দ।</button>
+</td>
+</tr>
+</table>
+</article>
+<script>
+var d = new Date();
+var dates = ["১৭", "১৮", "১৯", "২০", "২১", "২২", "২৩", "২৪", "২৫", "২৬", "২৭", "২৮", "২৯", "৩০", "৩১", "৩২", "১", "২", "৩", "৪", "৫", "৬", "৭", "৮", "৯", "১০", "১১", "১২", "১৩", "১৪", "১৫", "১৬"];
+document.getElementById("Date").innerHTML = dates[d.getDate()];
+</script>
+</body></html>

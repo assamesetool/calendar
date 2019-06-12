@@ -36,7 +36,7 @@ td {
      color:Maroon;
 	 background-color:Cyan;
 	 text-shadow:MediumSeaGreen 1px 1px 1px;
-	 font-size:26px;
+	 font-size:20px;
 	 width:280px;
 	height:140px;
 	margin: 0;
@@ -55,7 +55,8 @@ td {
 </style>
 <body><article><table><tr id='teal'>
 <td colspan="7" id='bordertop'>
-<button id="aa"><a>অসমীয়া লেখেৰে</a>
+<button id="aa">আজি <a id="Day"></a>বাৰ
+</br>অসমীয়া লেখেৰে
 </br>জেঠ মাহৰ <a id="Date"></a> তাৰিখ
 </br>১৪২৬ ভাস্কৰাব্দ।</button>
 </td>
@@ -64,7 +65,9 @@ td {
 </article>
 <script>
 var d = new Date();
-var dates = ["১৭", "১৮", "১৯", "২০", "২১", "২২", "২৩", "২৪", "২৫", "২৬", "২৭", "২৮", "২৯", "৩০", "৩১", "৩২", "১", "২", "৩", "৪", "৫", "৬", "৭", "৮", "৯", "১০", "১১", "১২", "১৩", "১৪", "১৫", "১৬"];
+var days = ["দেও", "সোম", "মংগল", "বুধ", "বৃহস্পতি", "শুক্ৰ", "শণি"];
+var dates = ["১৬", "১৭", "১৮", "১৯", "২০", "২১", "২২", "২৩", "২৪", "২৫", "২৬", "২৭", "২৮", "২৯", "৩০", "৩১", "৩২", "১", "২", "৩", "৪", "৫", "৬", "৭", "৮", "৯", "১০", "১১", "১২", "১৩", "১৪", "১৫"];
+document.getElementById("Day").innerHTML = days[d.getDay()];
 document.getElementById("Date").innerHTML = dates[d.getDate()];
 </script>
 </body></html>

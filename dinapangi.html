@@ -2,15 +2,14 @@
 <html>
 <style>
 html, body {
-	margin-top: 0;
-        margin-left: 2;
+	margin: 0;
 	padding: 0;
 }
 
 body {
 	background-color:transparent;
-	width:300px;
-	text-align:center
+	width:323px;
+	text-align:center;
 }
 article {
 	word-wrap: break-word;
@@ -32,42 +31,228 @@ table {
 td {
    text-align:center;
 }
-#aa {
-     color:Maroon;
-	 background-color:Cyan;
-	 text-shadow:MediumSeaGreen 1px 1px 1px;
-	 font-size:20px;
-	 width:280px;
-	height:140px;
-	margin: 0;
-	padding: 0;
+
+button {
+   font-weight:bold;
+}
+#xy {
+   font-size:8px;
+   color:Teal;
 }
 
 #teal {
-     background-color:green;
+     background-color:teal;
 }
-#border {
+#borderright {
      border-right:2px solid teal;
+}
+#bordertop {
      border-top:2px solid teal;
+}
+#borderleft {
      border-left:2px solid teal;
+}
+#bottomright {
       border-bottom:2px solid teal;
+	  border-right:2px solid teal;
+}
+#bottomrighttop {
+      border-bottom:2px solid teal;
+	  border-right:2px solid teal;
+	  border-top:2px solid teal;
+}
+#borderall {
+      border-bottom:2px solid teal;
+	  border-right:2px solid teal;
+	  border-top:2px solid teal;
+	  border-left:2px solid teal;
+}
+
+#sunday {
+     background-color:#FF1493;
+	 border-top:2px solid teal;
+	 border-bottom:2px solid teal;
+	 border-right:2px solid teal;
+}
+#satur {
+     background-color:#FFDAB9;
+	 border-top:2px solid teal;
+	 border-bottom:2px solid teal;
+}
+#days {
+    background-color:#FFDAB9;
+	border-top:2px solid teal;
+	border-bottom:2px solid teal;
+	border-right:2px solid teal;
+}
+
+#aa, #ab {
+	margin: 0;
+	padding: 0;
+	background-color:transparent;
+	width:40px;
+	height:62px;
+	font-size:20px;
+}
+#kb {
+	margin: 0;
+	padding: 0;
+	background-color:transparent;
+	width:40px;
+	height:40px;
+	font-size:20px;
+}
+#k {
+	margin: 0;
+	padding: 0;
+	background-color:#FFDAB9;
+	height:20px;
+	font-size:20px;
+}
+#aa {
+   color:red;
+}
+#amba {
+     background-image : url("https://upload.wikimedia.org/wikipedia/commons/9/97/Amabsya.png");
+	 background-repeat: no-repeat;
+	 margin: 0;
+	padding: 0;
+	background-color:transparent;
+	width:40px;
+	height:62px;
+	font-size:20px;
+	color:red;
+}
+#prna {
+     background-image : url("https://upload.wikimedia.org/wikipedia/commons/d/d3/Purnima.png");
+	 background-repeat: no-repeat;
+	 margin: 0;
+	padding: 0;
+	background-color:transparent;
+	width:40px;
+	height:62px;
+	font-size:20px;
+	color:red;
+}
+#amb {
+     background-image : url("https://upload.wikimedia.org/wikipedia/commons/9/97/Amabsya.png");
+	 background-repeat: no-repeat;
+	 margin: 0;
+	padding: 0;
+	background-color:transparent;
+	width:40px;
+	height:62px;
+	font-size:20px;
+}
+#prn {
+     background-image : url("https://upload.wikimedia.org/wikipedia/commons/d/d3/Purnima.png");
+	 background-repeat: no-repeat;
+	 margin: 0;
+	padding: 0;
+	background-color:transparent;
+	width:40px;
+	height:62px;
+	font-size:20px;
+}
+.tooltip {
+   position: relative;
+   display: inline-block;
+}
+.tooltip .tooltiptext {
+   visibility: hidden;
+   width: 200px;
+   background-color: #555;
+   color: Azure;
+   text-align: center;
+   border-radius: 6px;
+   padding: 0px 0;
+   position: absolute;
+   z-index: 0;
+   bottom: 125%;
+   margin-left: 0px;
+   opacity: 0;
+   transition: opacity 1s;
+}
+.tooltip:hover .tooltiptext {
+   visibility: visible;
+   opacity: 1;
+}
+#holya {
+   left: 0%;
+}
+#holyb {
+   left: -70%;
+}
+#holyc {
+   left: -400%;
 }
 </style>
-<body><article><table><tr id='teal'>
-<td colspan="7" id='bordertop'>
-<button id="aa">আজি <a id="Day"></a>বাৰ
-</br>অসমীয়া লেখেৰে
-</br>জেঠ মাহৰ <a id="Date"></a> তাৰিখ
-</br>১৪২৬ ভাস্কৰাব্দ।</button>
-</td>
+<body><article><table>
+<tr id='teal'>
+<td colspan='7' id="k"><button id="kb">জেঠ, ১৪২৬ ভাস্কৰাব্দ</button></td>
 </tr>
-</table>
-</article>
-<script>
-var d = new Date();
-var days = ["দেও", "সোম", "মংগল", "বুধ", "বৃহস্পতি", "শুক্ৰ", "শণি"];
-var dates = ["১৬", "১৭", "১৮", "১৯", "২০", "২১", "২২", "২৩", "২৪", "২৫", "২৬", "২৭", "২৮", "২৯", "৩০", "৩১", "৩২", "১", "২", "৩", "৪", "৫", "৬", "৭", "৮", "৯", "১০", "১১", "১২", "১৩", "১৪", "১৫"];
-document.getElementById("Day").innerHTML = days[d.getDay()];
-document.getElementById("Date").innerHTML = dates[d.getDate()];
-</script>
+<tr>
+<td width='14%' id='sunday'><button id="kb">দে</button></td>
+<td width='14%' id='days'><button id="kb">সো</button></td>
+<td width='14%' id='days'><button id="kb">ম</button></td>
+<td width='14%' id='days'><button id="kb">বু</button></td>
+<td width='14%' id='days'><button id="kb">বৃ</button></td>
+<td width='14%' id='days'><button id="kb">শু</button></td>
+<td width='14%' id='satur'><button id="kb">শ</button></td>
+</tr>
+<tr>
+<td id='borderright'><div class="tooltip"><button id="aa"></button></div></td>
+<td id='borderright'><div class="tooltip"><button id="ab"></button></div></td>
+<td id='borderright'><div class="tooltip"><button id="ab"></button></div></td>
+<td id='borderright'><div class="tooltip"><button id="ab"></button></div></td>
+<td id='borderright'><div class="tooltip"><button id="ab">১</br><a id="xy">১৬ মে'</a></button></div></td>
+<td id='borderright'><div class="tooltip"><button id="ab">২</br><a id="xy">১৭ মে'</a></button></div></td>
+<td>                 <div class="tooltip"><button id="prna">৩</br><a id="xy">১৮ মে'</a></button><span class="tooltiptext" id="holyc">বুদ্ধ পূৰ্ণিমা</span></div></td>
+</tr>
+<tr>
+<td id='borderright'><div class="tooltip"><button id="aa">৪</br><a id="xy">১৯ মে'</a></button></div></td>
+<td id='borderright'><div class="tooltip"><button id="ab">৫</br><a id="xy">২০ মে'</a></button></div></td>
+<td id='borderright'><div class="tooltip"><button id="ab">৬</br><a id="xy">২১ মে'</a></button></div></td>
+<td id='borderright'><div class="tooltip"><button id="ab">৭</br><a id="xy">২২ মে'</a></button></div></td>
+<td id='borderright'><div class="tooltip"><button id="ab">৮</br><a id="xy">২৩ মে'</a></button></div></td>
+<td id='borderright'><div class="tooltip"><button id="ab">৯</br><a id="xy">২৪ মে'</a></button></div></td>
+<td>                 <div class="tooltip"><button id="ab">১০</br><a id="xy">২৫ মে'</a></button></div></td>
+</tr>
+<tr>
+<td id='borderright'><div class="tooltip"><button id="aa">১১</br><a id="xy">২৬ মে'</a></button></div></td>
+<td id='borderright'><div class="tooltip"><button id="ab">১২</br><a id="xy">২৭ মে'</a></button></div></td>
+<td id='borderright'><div class="tooltip"><button id="ab">১৩</br><a id="xy">২৮ মে'</a></button></div></td>
+<td id='borderright'><div class="tooltip"><button id="ab">১৪</br><a id="xy">২৯ মে'</a></button></div></td>
+<td id='borderright'><div class="tooltip"><button id="aa">১৫</br><a id="xy">৩০ মে'</a></button><span class="tooltiptext" id="holyc">মিচিং উৎসৱ ডবুৰু</span></div></td>
+<td id='borderright'><div class="tooltip"><button id="ab">১৬</br><a id="xy">৩১ মে'</a></button></div></td>
+<td>                 <div class="tooltip"><button id="ab">১৭</br><a id="xy">১ জুন</a></button></div></td>
+</tr>
+<tr>
+<td id='borderright'><div class="tooltip"><button id="aa">১৮</br><a id="xy">২ জুন</a></button></div></td>
+<td id='borderright'><div class="tooltip"><button id="amb">১৯</br><a id="xy">৩ জুন</a></button></div></td>
+<td id='borderright'><div class="tooltip"><button id="ab">২০</br><a id="xy">৪ জুন</a></button></div></td>
+<td id='borderright'><div class="tooltip"><button id="aa">২১</br><a id="xy">৫ জুন</a></button><span class="tooltiptext" id="holyb">ইদ-উল-ফিতৰ</br>বিশ্ব পৰিৱেশ দিৱস</span></div></td>
+<td id='borderright'><div class="tooltip"><button id="ab">২২</br><a id="xy">৬ জুন</a></button></div></td>
+<td id='borderright'><div class="tooltip"><button id="ab">২৩</br><a id="xy">৭ জুন</a></button></div></td>
+<td>                 <div class="tooltip"><button id="ab">২৪</br><a id="xy">৮ জুন</a></button></div></td>
+</tr>
+<tr>
+<td id='borderright'><div class="tooltip"><button id="aa">২৫</br><a id="xy">৯ জুন</a></button></div></td>
+<td id='borderright'><div class="tooltip"><button id="ab">২৬</br><a id="xy">১০ জুন</a></button></div></td>
+<td id='borderright'><div class="tooltip"><button id="ab">২৭</br><a id="xy">১১ জুন</a></button></div></td>
+<td id='borderright'><div class="tooltip"><button id="ab">২৮</br><a id="xy">১২ জুন</a></button></div></td>
+<td id='borderright'><div class="tooltip"><button id="ab">২৯</br><a id="xy">১৩ জুন</a></button></div></td>
+<td id='borderright'><div class="tooltip"><button id="ab">৩০</br><a id="xy">১৪ জুন</a></button></div></td>
+<td>                 <div class="tooltip"><button id="ab">৩১</br><a id="xy">১৫ জুন</a></button></div></td>
+</tr>
+<tr>
+<td id='borderright'><div class="tooltip"><button id="aa">৩২</br><a id="xy">১৬ জুন</a></button></div></td>
+<td id='borderright'><div class="tooltip"><button id="ab"></button></div></td>
+<td id='borderright'><div class="tooltip"><button id="ab"></button></div></td>
+<td id='borderright'><div class="tooltip"><button id="ab"></button></div></td>
+<td id='borderright'><div class="tooltip"><button id="ab"></button></div></td>
+<td id='borderright'><div class="tooltip"><button id="ab"></button></div></td>
+<td>                 <div class="tooltip"><button id="ab"></button></div></td>
+</tr>
+</table></article>
 </body></html>

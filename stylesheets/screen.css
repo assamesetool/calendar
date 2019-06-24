@@ -5,7 +5,7 @@ html, body {
 
 body {
 	background-color:transparent;
-	width:350px;
+	width:345px;
 	text-align:center;
 }
 article {
@@ -87,7 +87,7 @@ button {
 	margin: 0;
 	padding: 0;
 	background-color:transparent;
-	width:46px;
+	width:45px;
 	height:62px;
 	font-size:20px;
 }
@@ -95,8 +95,8 @@ button {
 	margin: 0;
 	padding: 0;
 	background-color:transparent;
-	width:46px;
-	height:46px;
+	width:45px;
+	height:45px;
 	font-size:20px;
 }
 #k {
@@ -115,7 +115,7 @@ button {
 	 margin: 0;
 	padding: 0;
 	background-color:transparent;
-	width:46px;
+	width:45px;
 	height:62px;
 	font-size:20px;
 	color:red;
@@ -126,7 +126,7 @@ button {
 	 margin: 0;
 	padding: 0;
 	background-color:transparent;
-	width:46px;
+	width:45px;
 	height:62px;
 	font-size:20px;
 	color:red;
@@ -137,7 +137,7 @@ button {
 	 margin: 0;
 	padding: 0;
 	background-color:transparent;
-	width:46px;
+	width:45px;
 	height:62px;
 	font-size:20px;
 }
@@ -147,7 +147,7 @@ button {
 	 margin: 0;
 	padding: 0;
 	background-color:transparent;
-	width:46px;
+	width:45px;
 	height:62px;
 	font-size:20px;
 }
@@ -186,9 +186,26 @@ button {
 #kc {
 	margin: 0;
 	padding: 0;
-	background-color:transparent;
 	width:310px;
-	height:46px;
+	height:45px;
+	font-size:20px;
+	color:Cyan;
+	background-color:green;
+}
+#kd {
+	margin: 0;
+	padding: 0;
+	width:85px;
+	height:45px;
+	font-size:20px;
+	color:Cyan;
+	background-color:green;
+}
+#ke {
+	margin: 0;
+	padding: 0;
+	width:130px;
+	height:45px;
 	font-size:20px;
 	color:Cyan;
 	background-color:green;

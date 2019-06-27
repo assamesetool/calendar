@@ -60,14 +60,14 @@ td {
       border-bottom:2px solid teal;
 }
 div {
-    width:350px;
+    width:345px;
 	height:200px;
 	position:relative;
 	overflow:hidden;
 }
 iframe {
     position:absolute;
-	width:350px;
+	width:345px;
 	height:150px;
 	top:16px;
 	right:-0px;

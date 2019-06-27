@@ -6,7 +6,7 @@ html, body {
 
 body {
 	background-color:transparent;
-	width:100%;
+	width:350px;
 	text-align:center
 }
 article {
@@ -34,7 +34,7 @@ td {
 	 background-color:Cyan;
 	 text-shadow:MediumSeaGreen 1px 1px 1px;
 	 font-size:26px;
-	 width:99%;
+	 width:340px;
 	height:200px;
 	margin: 0;
 	padding: 0;
@@ -44,7 +44,7 @@ td {
 	 background-color:Cyan;
 	 text-shadow:MediumSeaGreen 1px 1px 1px;
 	 font-size:20px;
-	 width:70%;
+	 width:280px;
 	height:60px;
 	margin: 0;
 	padding: 0;
@@ -60,14 +60,14 @@ td {
       border-bottom:2px solid teal;
 }
 div {
-    width:99%;
+    width:350px;
 	height:200px;
 	position:relative;
 	overflow:hidden;
 }
 iframe {
     position:absolute;
-	width:99%;
+	width:350px;
 	height:150px;
 	top:16px;
 	right:-0px;

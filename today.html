@@ -6,7 +6,6 @@ html, body {
         margin-left: 10;
 	padding: 0;
 }
-
 body {
 	background-color:transparent;
 	width:300px;
@@ -42,7 +41,6 @@ td {
 	margin: 0;
 	padding: 0;
 }
-
 #teal {
      background-color:green;
 }
@@ -52,22 +50,42 @@ td {
      border-left:2px solid teal;
       border-bottom:2px solid teal;
 }
+#ToDate {
+     color:Maroon;
+}
 </style>
 <body><article><table><tr id='teal'>
 <td colspan="7" id='bordertop'>
 <button id="aa">আজি <a id="Day"></a>বাৰ
 </br>অসমীয়া লেখেৰে
 </br>আহাৰ মাহৰ <a id="Date"></a> তাৰিখ
-</br>১৪২৬ ভাস্কৰাব্দ।</button>
+</br>১৪২৬ ভাস্কৰাব্দ।
+</button>
 </td>
 </tr>
 </table>
 </article>
+<marquee behavior="scroll" direction="left" scrollamount="3"><a id="ToDate"></a></marquee>
 <script>
-var d = new Date();
+var n =  new Date();
+var a = n.getDay();
+var b = n.getDate();
+var c = n.getMonth()+1;
 var days = ["দেও", "সোম", "মংগল", "বুধ", "বৃহস্পতি", "শুক্ৰ", "শণি"];
 var dates = ["১৪", "১৫", "১৬", "১৭", "১৮", "১৯", "২০", "২১", "২২", "২৩", "২৪", "২৫", "২৬", "২৭", "২৮", "২৯", "৩০", "৩১", "১", "২", "৩", "৪", "৫", "৬", "৭", "৮", "৯", "১০", "১১", "১২", "১৩", "১৪"];
-document.getElementById("Day").innerHTML = days[d.getDay()];
-document.getElementById("Date").innerHTML = dates[d.getDate()];
+var today = c+''+c+''+b
+                if (today > 7713 ) {A=""} //July 14//
+           else if (today > 7712 ) {A=""}  //July 13//
+		   else if (today > 7711 ) {A="১৯০৪ বৰ্ষৰ আজিৰ দিনটোতে সাহিত্যৰ ন'বেল বঁটা বিজয়ী কবি, পাবলো নেৰুদাৰ জন্ম হৈছিল৷ ১০১ খ্ৰীষ্টপূৰ্বৰ আজিৰ দিনটোত জুলিয়াছ চিজাৰৰ জন্ম হৈছিল৷ ১৮৬৩ চনৰ আজিৰ দিনটোতে যক্ষ্মা ৰোগৰ প্ৰতিষেধক চিটা আৱিষ্কাৰক এলৰ্বাট কামেটে ফ্ৰান্সত জন্ম লাভ কৰিছিল৷ ১৮৯৩ চনৰ আজিৰ দিনটোতে অসমৰ প্ৰথম শিশু আলোচনী 'ল'ৰাবন্ধু'ৰ প্ৰতিষ্ঠাপক সম্পাদক কৰুণাভিৰাম বৰুৱাৰ মৃত্যু হয়। ১৯৯৯ চনৰ আজিৰ দিনটোতে হিন্দী চলচিত্ৰ জগতৰ বিশিষ্ট অভিনেতা ৰাজেন্দ্ৰ কুমাৰৰ মৃত্যু হয়। ১৯৯১ চনৰ আজিৰ দিনটোতে ভাৰতৰ প্ৰথম উপ-প্ৰধান মন্ত্ৰী চৰ্দাৰ বল্লভ ভাই পেটেলক মৰণোত্তৰভাৱে ভাৰতৰত্ন সন্মান লাভ কৰে।"}  //July 12//
+		   else if (today > 7710 ) {A="১৯৩৯ চনৰ আজিৰ দিনটোত ভাৰতীয় চলচ্চিত্ৰ জগতৰ এজন বিশিষ্ট প্ৰযোজক তথা পৰিচালক প্ৰকাশ মেহৰাৰ জন্ম হয়। ১৯৯৫ চনৰ আজিৰ দিনটোত সাহিত্যিক, ভাৰতীয় জ্ঞানপীঠ বঁটা বিজয়ী প্ৰথম মহিলা আশাপূ্ৰ্ণা দেৱীৰ মৃত্যু হয়। ১৮১২ চনৰ আজিৰ দিনটোত নেপচুন গ্ৰহৰ সন্ধান কৰোঁতা বিশিষ্ট জাৰ্মান জ্যোতিৰ্বিদ হেইনৰিখ লুই দা অৰেষ্টৰ মৃত্যু হয়।"}  //July 11//
+				 
+           else {A=''}
+function checkTime(i){
+           if(i<10){i="0"+i};// add Zero in front of numbers < 10
+           return i;}
+document.getElementById('ToDate').innerHTML = A;
+document.getElementById("Day").innerHTML = days[a];
+document.getElementById("Date").innerHTML = dates[b];
 </script>
-</body></html>
+</body>
+</html>

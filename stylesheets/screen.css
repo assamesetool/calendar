@@ -219,6 +219,15 @@ div.scroll {
 	color:Cyan;
 	background-color:green;
 }
+#li {
+	margin: 0;
+	padding: 0;
+	width:80%;
+	font-size:20px;
+	color:Cyan;
+	background-color:green;
+	text-align:center;
+}
 #ke {
 	margin: 0;
 	padding: 0;

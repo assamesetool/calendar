@@ -35,7 +35,7 @@ td {
      color:Maroon;
 	 background-color:Cyan;
 	 text-shadow:MediumSeaGreen 1px 1px 1px;
-	 font-size:20px;
+	 font-size:17px;
 	 width:280px;
 	height:140px;
 	margin: 0;
@@ -60,6 +60,7 @@ td {
 </br>অসমীয়া লেখেৰে
 </br>শাওন মাহৰ <a id="Date"></a> তাৰিখ
 </br>১৪২৬ ভাস্কৰাব্দ।
+</br>(<a id="EnDate"></a> <a id="EnMonth"></a>, ১০১৯)
 </button>
 </td>
 </tr>
@@ -73,6 +74,8 @@ var b = n.getDate();
 var c = n.getMonth()+1;
 var days = ["দেও", "সোম", "মংগল", "বুধ", "বৃহস্পতি", "শুক্ৰ", "শণি"];
 var dates = ["০", "১৫", "১৬", "১৭", "১৮", "১৯", "২০", "২১", "২২", "২৩", "২৪", "২৫", "২৬", "২৭", "২৮", "২৯", "৩০", "৩১", "৩২", "১", "২", "৩", "৪", "৫", "৬", "৭", "৮", "৯", "১০", "১২", "১৩", "১৪"];
+var enmonth = ["১", "২", "৩", "৪", "৫", "৬", "৭", "৮", "৯", "১০", "১১", "১২"];
+var edates = ["০", "১", "২", "৩", "৪", "৫", "৬", "৭", "৮", "৯", "১০", "১১", "১২", "১৩", "১৪", "১৫", "১৬", "১৭", "১৮", "১৯", "২০", "২১", "২২", "২৩", "২৪", "২৫", "২৬", "২৭", "২৮", "২৯", "৩০", "৩১"];
 var today = c+''+c+''+b 
                         if (today > 8810 ) {A=""}
 	           else if (today > 8809 ) {A="১৯৬৩ চনৰ আজিৰ দিনটোতে ভাৰতীয় লোকসভাৰ সাংসদ; একালৰ দস্যু ৰাণী ফুলন দেৱীৰ জন্ম হৈছিল।&nbsp;&nbsp;&nbsp;&nbsp;১৮৬০ চনৰ আজিৰ দিনটোতে ভাৰতীয় সংগীতত নৱযুগৰ সূচনা কৰোঁতা বিষ্ণু নাৰায়ণ ভাটখাণ্ডেৰ জন্ম হয়।"} //১০ আগষ্ট//
@@ -113,6 +116,8 @@ function checkTime(i){
 document.getElementById('ToDate').innerHTML = A;
 document.getElementById("Day").innerHTML = days[a];
 document.getElementById("Date").innerHTML = dates[b];
+document.getElementById("EnDate").innerHTML = endates[b];
+document.getElementById("EnMonth").innerHTML = enmonth[c];
 </script>
 </body>
 </html>

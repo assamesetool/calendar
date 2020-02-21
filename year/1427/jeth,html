@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <link rel="stylesheet" href="../../stylesheets/screen.css">
+<body><article><table>
+<tr id='g'>
+<td colspan='2'><image onclick="location.href='bohag.html'" id='kd' src='https://upload.wikimedia.org/wikipedia/commons/8/85/Linearicons_arrow-left-circle.svg'></td>
+<td colspan='3'><button id='ke'>জেঠ মাহ</button></td>
+<td colspan='2'><image onclick="location.href=''" id='kd' src='https://upload.wikimedia.org/wikipedia/commons/e/ef/Linearicons_arrow-right-circle.svg'></td>
+</tr>
+<tr>
+<td width='14%' id='sunday'><button id="kb">দে</button></td>
+<td width='14%' id='days'><button id="kb">সো</button></td>
+<td width='14%' id='days'><button id="kb">ম</button></td>
+<td width='14%' id='days'><button id="kb">বু</button></td>
+<td width='14%' id='days'><button id="kb">বৃ</button></td>
+<td width='14%' id='days'><button id="kb">শু</button></td>
+<td width='14%' id='satur'><button id="kb">শ</button></td>
+</tr>
+<tr>
+<td id='borderright'><div class="tooltip"><button id="aa"></button></div></td>
+<td id='borderright'><div class="tooltip"><button id="ab"></button></div></td>
+<td id='borderright'><div class="tooltip"><button id="ab"></button></div></td>
+<td id='borderright'><div class="tooltip"><button id="ab"></button></div></td>
+<td id='borderright'><div class="tooltip"><button id="ab"></button></div></td>
+<td id='borderright'><div class="tooltip"><button id="ab">১</br><a id="xy">১৫ মে'</a></button></div></td>
+<td>                 <div class="tooltip"><button id="ab">২</br><a id="xy">১৬ মে'</a></button></div></td>
+</tr>
+<tr>
+<td id='borderright'><div class="tooltip"><button id="aa">৩</br><a id="xy">১৭ মে'</a></button></div></td>
+<td id='borderright'><div class="tooltip"><button id="ab">৪</br><a id="xy">১৮ মে'</a></button></div></td>
+<td id='borderright'><div class="tooltip"><button id="ab">৫</br><a id="xy">১৯ মে'</a></button></div></td>
+<td id='borderright'><div class="tooltip"><button id="ab">৬</br><a id="xy">২০ মে'</a></button></div></td>
+<td id='borderright'><div class="tooltip"><button id="ab">৭</br><a id="xy">২১ মে'</a></button></div></td>
+<td id='borderright'><div class="tooltip"><button id="amb">৮</br><a id="xy">২২ মে'</a></button></div></td>
+<td>                 <div class="tooltip"><button id="ab">৯</br><a id="xy">২৩ মে'</a></button></div></td>
+</tr>
+<tr>
+<td id='borderright'><div class="tooltip"><button id="aa">১০</br><a id="xy">২৪ মে'</a></button><span class="tooltiptext" id="holya">ইদ-উল-ফিতৰ</span></div></td>
+<td id='borderright'><div class="tooltip"><button id="ab">১১</br><a id="xy">২৫ মে'</a></button></div></td>
+<td id='borderright'><div class="tooltip"><button id="ab">১২</br><a id="xy">২৬ মে'</a></button></div></td>
+<td id='borderright'><div class="tooltip"><button id="ab">১৩</br><a id="xy">২৭ মে'</a></button></div></td>
+<td id='borderright'><div class="tooltip"><button id="ab">১৪</br><a id="xy">২৮ মে'</a></button></div></td>
+<td id='borderright'><div class="tooltip"><button id="ab">১৫</br><a id="xy">২৯ মে'</a></button></div></td>
+<td>                 <div class="tooltip"><button id="ab">১৬</br><a id="xy">৩০ জুন</a></button></div></td>
+</tr>
+<tr>
+<td id='borderright'><div class="tooltip"><button id="aa">১৭</br><a id="xy">৩১ জুন</a></button></div></td>
+<td id='borderright'><div class="tooltip"><button id="ab">১৮</br><a id="xy">১ জুন</a></button></div></td>
+<td id='borderright'><div class="tooltip"><button id="ab">১৯</br><a id="xy">২ জুন</a></button></div></td>
+<td id='borderright'><div class="tooltip"><button id="ab">২০</br><a id="xy">৩ জুন</a></button></div></td>
+<td id='borderright'><div class="tooltip"><button id="ab">২১</br><a id="xy">৪ জুন</a></button></div></td>
+<td id='borderright'><div class="tooltip"><button id="prna">২২</br><a id="xy">৫ জুন</a></button><span class="tooltiptext" id="holyc">বিশ্ব পৰিৱেশ দিৱস</span></div></td>
+<td>                 <div class="tooltip"><button id="aa">২৩</br><a id="xy">৬ জুন</a></button><span class="tooltiptext" id="holyc">মাধৱদেৱৰ জন্মতিথি</span></div></td>
+</tr>
+<tr>
+<td id='borderright'><div class="tooltip"><button id="aa">২৪</br><a id="xy">৭ জুন</a></button></div></td>
+<td id='borderright'><div class="tooltip"><button id="ab">২৫</br><a id="xy">৮ জুন</a></button></div></td>
+<td id='borderright'><div class="tooltip"><button id="ab">২৬</br><a id="xy">৯ জুন</a></button></div></td>
+<td id='borderright'><div class="tooltip"><button id="ab">২৭</br><a id="xy">১০ জুন</a></button></div></td>
+<td id='borderright'><div class="tooltip"><button id="ab">২৮</br><a id="xy">১১ জুন</a></button></div></td>
+<td id='borderright'><div class="tooltip"><button id="ab">২৯</br><a id="xy">১২ জুন</a></button></div></td>
+<td>                 <div class="tooltip"><button id="ab">৩০</br><a id="xy">১৩ জুন</a></button></div></td>
+</tr>
+<tr>
+<td id='borderright'><div class="tooltip"><button id="aa">৩১</br><a id="xy">১৪ জুন</a></button></div></td>
+<td id='borderright'><div class="tooltip"><button id="ab">৩২</br><a id="xy">১৫ জুন</a></button></div></td>
+<td id='borderright'><div class="tooltip"><button id="ab"></button></div></td>
+<td id='borderright'><div class="tooltip"><button id="ab"></button></div></td>
+<td id='borderright'><div class="tooltip"><button id="ab"></button></div></td>
+<td id='borderright'><div class="tooltip"><button id="ab"></button></div></td>
+<td>                 <div class="tooltip"><button id="ab"></button></div></td>
+</tr>
+<tr id='g'>
+<td colspan='2'><div class="tooltip">মে', ২০২০</div></td>
+<td colspan='3'><div class="tooltip"><button id="footer"><a id='kc'>১৪২৭ ভাস্কৰাব্দ</a></button></div></td>
+<td colspan='2'><div class="tooltip">জুন, ২০২০</div></td>
+</tr>
+<tr id='g'>
+<td colspan='7'><button id="footer" onclick="location.href='../../index.html'"><a>মুখ্যপৃষ্ঠালৈ ঘূৰি যাওক।</a></button></td>
+</tr>
+</table></article>
+</body></html>

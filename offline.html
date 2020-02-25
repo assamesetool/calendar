@@ -9,11 +9,11 @@
 <script>
 function onoffline() {
   var x = navigator.onLine
-if (x == false) {
-  document.getElementById("offline").innerHTML = "বৰ্তমান মাহলৈ যাওক";
+if (x == true) {
+  document.getElementById("online").innerHTML = "বৰ্তমান মাহলৈ যাওক";
 }
 else {
-document.getElementById("online").innerHTML = "বৰ্তমান মাহলৈ যাওক";
+document.getElementById("offline").innerHTML = "বৰ্তমান মাহলৈ যাওক";
 };}
 </script>
 

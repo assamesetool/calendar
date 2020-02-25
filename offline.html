@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body onload="onoffline()">
+
+<button>
+<a onclick="location.href='kati.html'" id="online"></a>
+<a onclick="location.href='offline.html'" id="offline"></a></button>
+
+<script>
+function onoffline() {
+  var x = navigator.onLine
+if (x == false) {
+  document.getElementById("offline").innerHTML = "বৰ্তমান মাহলৈ যাওক";
+}
+else {
+document.getElementById("online").innerHTML = "বৰ্তমান মাহলৈ যাওক";
+};}
+</script>
+
+</body>
+</html>

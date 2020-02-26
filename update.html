@@ -1,51 +1,58 @@
 <!DOCTYPE html>
 <html>
-  <link rel="stylesheet" href="stylesheets/screen.css">
+<head>
+<style>
+#div1 {
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  border: 1px solid red;
+}
+#drag1,#drag2,#drag3,#drag4 {
+  width: 40px;
+  height: 40px;
+  color: red;
+  font-size: 35px;
+  background: blue;
+  border: 1px solid #aaaaaa;
+}
+#fon {
+  color: green;
+  font-size: 35px;
+}
+</style>
+<script>
+function allowDrop(ev) {
+  ev.preventDefault();
+}
+
+function drag(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  ev.target.appendChild(document.getElementById(data));
+}
+</script>
+</head>
+  <link rel="stylesheet" href="../../stylesheets/screen.css">
 <body><article><table>
 <tr id='g'>
-<td colspan='7'><div class="tooltip"><button id='kc'>আপডেট কৰি থকা হৈছে।</button></div></td>
-</tr>
-<tr>
-<td width='14%' id='sunday'><button id="kb"></button></td>
-<td width='14%' id='days'><button id="kb"></button></td>
-<td width='14%' id='days'><button id="kb"></button></td>
-<td width='14%' id='days'><button id="kb"></button></td>
-<td width='14%' id='days'><button id="kb"></button></td>
-<td width='14%' id='days'><button id="kb"></button></td>
-<td width='14%' id='satur'><button id="kb"></button></td>
-</tr>
-<tr>
-<td id='borderright'><div class="tooltip"><button id="aa"></br><a id="xy"></a></button></div></td>
-<td id='borderright'><div class="tooltip"><button id="ab"></br><a id="xy"></a></button></div></td>
-<td id='borderright'><div class="tooltip"><button id="ab"></br><a id="xy"></a></button></div></td>
-<td id='borderright'><div class="tooltip"><button id="ab"></br><a id="xy"></a></button></div></td>
-<td id='borderright'><div class="tooltip"><button id="ab"></br><a id="xy"></a></button></div></td>
-<td id='borderright'><div class="tooltip"><button id="ab"></br><a id="xy"></a></button></div></td>
-<td>                 <div class="tooltip"><button id="ab"></br><a id="xy"></a></button></div></td>
-</tr>
-<tr>
-<td id='borderright'><div class="tooltip"><button id="aa"></br><a id="xy"></a></button></div></td>
-<td id='borderright'><div class="tooltip"><button id="ab"></br><a id="xy"></a></button></div></td>
-<td colspan='3'><div class="tooltip"><button id="footer"><a id='kc'>অতি সোনকালে আপডেট কৰা হব।</a></button></div></td>
-<td id='borderright'><div class="tooltip"><button id="ab"></br><a id="xy"></a></button></div></td>
-<td>                 <div class="tooltip"><button id="ab"></br><a id="xy"></a></button></div></td>
-</tr>
-<tr>
-<td id='borderright'><div class="tooltip"><button id="aa"></br><a id="xy"></a></button></div></td>
-<td id='borderright'><div class="tooltip"><button id="ab"></br><a id="xy"></a></button></div></td>
-<td id='borderright'><div class="tooltip"><button id="ab"></br><a id="xy"></a></button></div></td>
-<td id='borderright'><div class="tooltip"><button id="ab"></br><a id="xy"></a></button></div></td>
-<td id='borderright'><div class="tooltip"><button id="ab"></br><a id="xy"></a></button></div></td>
-<td id='borderright'><div class="tooltip"><button id="ab"></br><a id="xy"></a></button></div></td>
-<td>                 <div class="tooltip"><button id="ab"></br><a id="xy"></a></button></div></td>
-</tr>
-<tr id='g'>
-<td colspan='2'><div class="tooltip">২০২০ চন</div></td>
-<td colspan='3'><div class="tooltip"><button id="footer"><a id='kc'>১৪২৭ ভাস্কৰাব্দ</a></button></div></td>
-<td colspan='2'><div class="tooltip">২০২১ চন</div></td>
-</tr>
-<tr id='g'>
-<td colspan='7'><button id="footer" onclick="location.href='index.html'"><a>মুখ্যপৃষ্ঠালৈ ঘূৰি যাওক।</a></button></td>
+
+<p id="fon">আখৰ সজাওক:</p>
+
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<br>
+<button id="drag1" draggable="true" ondragstart="drag(event)" style="width:50px;height: 50px;">ক</button>
+<button id="drag2" draggable="true" ondragstart="drag(event)" style="width:50px;height: 50px;">গ</button>
+<button id="drag3" draggable="true" ondragstart="drag(event)" style="width:50px;height: 50px;">খ</button>
+<button id="drag4" draggable="true" ondragstart="drag(event)" style="width:50px;height: 50px;">ঘ</button>
+
 </tr>
 </table></article>
 </body></html>

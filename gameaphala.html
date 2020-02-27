@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="stylesheets/screen.css">
+<style>
+#div1 {
+ width: 50px;
+ height: 60px;
+ padding: 5px;
+ border: 1px solid red;
+}
+#drag1,#drag2,#drag3,#drag4,#drag5,#drag6,#drag7,#drag8,#drag9,#drag10,#drag11,#drag12,#drag13,#drag14,#drag15,
+#drag16,#drag17,#drag18,#drag19,#drag20,#drag21,#drag22,#drag23,#drag24,#drag25,#drag26,#drag27,#drag28,#drag29,#drag30,
+#drag31,#drag32,#drag33,#drag34,#drag35,#drag36,#drag37,#drag38,#drag39,#drag40,#drag41 {
+ width: 50px;
+ height: 60px;
+ color:Cyan;
+ background-color:green;
+ font-size: 30px;
+ border: 1px solid #aaaaaa;
+}
+#fon {
+ color: green;
+ font-size: 25px;
+}
+</style>
+<script>
+var source;
+function dragStarted(evt) {
+    source = evt.target;
+    evt.dataTransfer.setData("text/plain", evt.target.innerHTML);
+    evt.dataTransfer.effectAllowed = "move";
+    document.getElementById('uldPopup').style.display = "none";
+}
+
+function draggingOver(evt) {
+    evt.preventDefault();
+    evt.dataTransfer.dropEffect = "move";
+}
+
+function draggingLeave(evt) {
+    evt.preventDefault();
+    evt.dataTransfer.dropEffect = "move";
+}
+
+function dropped(evt) {
+    evt.preventDefault();
+    evt.stopPropagation();
+    source.innerHTML = evt.target.innerHTML;
+    evt.target.innerHTML = evt.dataTransfer.getData("text/plain");
+
+    arr[returnIndex(arr, source.id)][0] = evt.target.id;
+    arr[returnIndex(arr, evt.target.id)][0] = source.id;
+}
+</script>
+</head>
+<body><article><table>
+<tr id='g'>
+<td colspan='10'><button id="footer"><a>বৰ্ণবোৰ ক্ৰমত সজাওক:</a></button></td>
+</tr>
+<tr>
+<td colspan='1' id='borderright'><div></div></td>
+<td colspan='2' id='borderright'><div id="div1"><button id="drag2" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped(event)">এ</button></div></td>
+<td colspan='2' id='borderright'><div id="div1"><button id="drag3" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped(event)">ঊ</button></div></td>
+<td colspan='2' id='borderright'><div id="div1"><button id="drag4" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped(event)">ঔ</button></div></td>
+<td colspan='2' id='borderright'><div id="div1"><button id="drag5" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped(event)">আ</button></div></td>
+<td colspan='1' id='borderright'><div></div></td>
+</tr>
+<tr>
+<td colspan='2' id='borderright'><div></div></td>
+<td colspan='2' id='borderright'><div id="div1"><button id="drag8" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped(event)">ঈ</button></div></td>
+<td colspan='2' id='borderright'><div id="div1"><button id="drag9" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped(event)">অ</button></div></td>
+<td colspan='2' id='borderright'><div id="div1"><button id="drag10" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped(event)">ও</button></div></td>
+<td colspan='2' id='borderright'><div></div></td>
+</tr>
+<tr>
+<td colspan='1' id='borderright'><div></div></td>
+<td colspan='2' id='borderright'><div id="div1"><button id="drag13" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped(event)">ঋ</button></div></td>
+<td colspan='2' id='borderright'><div id="div1"><button id="drag14" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped(event)">ই</button></div></td>
+<td colspan='2' id='borderright'><div id="div1"><button id="drag15" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped(event)">উ</button></div></td>
+<td colspan='2' id='borderright'><div id="div1"><button id="drag16" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped(event)">ঐ</button></div></td>
+<td colspan='1' id='borderright'><div></div></td>
+</tr>
+<tr id='g'>
+<td colspan='5'><button id="footer" onclick="location.href='update.html'"><a>বেলেগ এটা খেলক!</a></button></td>
+<td colspan='5'><button  id="footer" onclick="location.reload();"><a>আকৌ খেলক!</a></button></td>
+</tr>
+</table></article>
+</body></html>

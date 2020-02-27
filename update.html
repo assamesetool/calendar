@@ -4,151 +4,121 @@
 <link rel="stylesheet" href="stylesheets/screen.css">
 <style>
 #div1 {
-  width: 40px;
-  height: 40px;
-  padding: 10px;
-  border: 1px solid red;
+ width: 50px;
+ height: 50px;
+ padding: 5px;
+ border: 1px solid red;
 }
 #drag1,#drag2,#drag3,#drag4,#drag5,#drag6,#drag7,#drag8,#drag9,#drag10,#drag11,#drag12,#drag13,#drag14,#drag15,
 #drag16,#drag17,#drag18,#drag19,#drag20,#drag21,#drag22,#drag23,#drag24,#drag25,#drag26,#drag27,#drag28,#drag29,#drag30,
 #drag31,#drag32,#drag33,#drag34,#drag35,#drag36,#drag37,#drag38,#drag39,#drag40,#drag41 {
-  width: 30px;
-  height: 30px;
-  color: red;
-  font-size: 25px;
-  background: blue;
-  border: 1px solid #aaaaaa;
+ width: 50px;
+ height: 50px;
+ color:Cyan;
+ background-color:green;
+ font-size: 30px;
+ border: 1px solid #aaaaaa;
 }
 #fon {
-  color: green;
-  font-size: 25px;
+ color: green;
+ font-size: 25px;
 }
 </style>
 <script>
-function allowDrop(ev) {
-  ev.preventDefault();
+var source;
+function dragStarted(evt) {
+    source = evt.target;
+    evt.dataTransfer.setData("text/plain", evt.target.innerHTML);
+    evt.dataTransfer.effectAllowed = "move";
+    document.getElementById('uldPopup').style.display = "none";
 }
 
-function drag(ev) {
-  ev.dataTransfer.setData("text", ev.target.id);
+function draggingOver(evt) {
+    evt.preventDefault();
+    evt.dataTransfer.dropEffect = "move";
 }
 
-function drop(ev) {
-  ev.preventDefault();
-  var data = ev.dataTransfer.getData("text");
-  ev.target.appendChild(document.getElementById(data));
+function draggingLeave(evt) {
+    evt.preventDefault();
+    evt.dataTransfer.dropEffect = "move";
+}
+
+function dropped(evt) {
+    evt.preventDefault();
+    evt.stopPropagation();
+    source.innerHTML = evt.target.innerHTML;
+    evt.target.innerHTML = evt.dataTransfer.getData("text/plain");
+
+    arr[returnIndex(arr, source.id)][0] = evt.target.id;
+    arr[returnIndex(arr, evt.target.id)][0] = source.id;
 }
 </script>
 </head>
 <body><article><table>
-<tr>
-<p id="fon">আখৰ সজাওক:</p>
+<tr id='g'>
+<td colspan='7'><button id="footer"><a>বৰ্ণবোৰ ক্ৰমত সজাওক:</a></button></td>
 </tr>
 <tr>
-<td id='borderright'><div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
-<td id='borderright'><div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
-<td id='borderright'><div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
-<td id='borderright'><div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
-<td id='borderright'><div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+<td id='borderright'><div id="div1"><button id="drag1" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped(event)">ঝ</button></div></td>
+<td id='borderright'><div id="div1"><button id="drag2" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped(event)">থ</button></div></td>
+<td id='borderright'><div id="div1"><button id="drag3" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped(event)">ভ</button></div></td>
+<td id='borderright'><div id="div1"><button id="drag4" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped(event)">ট</button></div></td>
+<td id='borderright'><div id="div1"><button id="drag5" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped(event)">ঃ</button></div></td>
 </tr>
 <tr>
-<td id='borderright'><div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
-<td id='borderright'><div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
-<td id='borderright'><div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
-<td id='borderright'><div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
-<td id='borderright'><div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+<td id='borderright'><div id="div1"><button id="drag1" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped(event)">ন</button></div></td>
+<td id='borderright'><div id="div1"><button id="drag1" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped(event)">ণ</button></div></td>
+<td id='borderright'><div id="div1"><button id="drag1" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped(event)">ক</button></div></td>
+<td id='borderright'><div id="div1"><button id="drag1" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped(event)">ঠ</button></div></td>
+<td id='borderright'><div id="div1"><button id="drag1" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped(event)">প</button></div></td>
 </tr>
 <tr>
-<td id='borderright'><div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
-<td id='borderright'><div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
-<td id='borderright'><div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
-<td id='borderright'><div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
-<td id='borderright'><div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+<td id='borderright'><div id="div1"><button id="drag1" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped(event)">ঢ়</button></div></td>
+<td id='borderright'><div id="div1"><button id="drag1" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped(event)">জ</button></div></td>
+<td id='borderright'><div id="div1"><button id="drag1" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped(event)">খ</button></div></td>
+<td id='borderright'><div id="div1"><button id="drag1" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped(event)">ঘ</button></div></td>
+<td id='borderright'><div id="div1"><button id="drag1" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped(event)">ছ</button></div></td>
 </tr>
 <tr>
-<td id='borderright'><div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
-<td id='borderright'><div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
-<td id='borderright'><div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
-<td id='borderright'><div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
-<td id='borderright'><div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+<td id='borderright'><div id="div1"><button id="drag1" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped(event)">হ</button></div></td>
+<td id='borderright'><div id="div1"><button id="drag1" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped(event)">ং</button></div></td>
+<td id='borderright'><div id="div1"><button id="drag1" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped(event)">য</button></div></td>
+<td id='borderright'><div id="div1"><button id="drag1" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped(event)">গ</button></div></td>
+<td id='borderright'><div id="div1"><button id="drag1" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped(event)">ঙ</button></div></td>
 </tr>
 <tr>
-<td id='borderright'><div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
-<td id='borderright'><div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
-<td id='borderright'><div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
-<td id='borderright'><div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
-<td id='borderright'><div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+<td id='borderright'><div id="div1"><button id="drag1" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped(event)">ঢ</button></div></td>
+<td id='borderright'><div id="div1"><button id="drag1" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped(event)">ধ</button></div></td>
+<td id='borderright'><div id="div1"><button id="drag1" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped(event)">ষ</button></div></td>
+<td id='borderright'><div id="div1"><button id="drag1" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped(event)">য়</button></div></td>
+<td id='borderright'><div id="div1"><button id="drag1" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped(event)">ফ</button></div></td>
 </tr>
 <tr>
-<td id='borderright'><div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
-<td id='borderright'><div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
-<td id='borderright'><div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
-<td id='borderright'><div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+<td id='borderright'><div id="div1"><button id="drag1" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped(event)">স</button></div></td>
+<td id='borderright'><div id="div1"><button id="drag1" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped(event)">ঞ</button></div></td>
+<td id='borderright'><div id="div1"><button id="drag1" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped(event)">দ</button></div></td>
+<td id='borderright'><div id="div1"><button id="drag1" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped(event)">ঁ</button></div></td>
 </tr>
 <tr>
-<td id='borderright'><div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
-<td id='borderright'><div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
-<td id='borderright'><div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
-<td id='borderright'><div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+<td id='borderright'><div id="div1"><button id="drag1" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped(event)">ড</button></div></td>
+<td id='borderright'><div id="div1"><button id="drag1" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped(event)">ত</button></div></td>
+<td id='borderright'><div id="div1"><button id="drag1" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped(event)">ৎ</button></div></td>
+<td id='borderright'><div id="div1"><button id="drag1" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped(event)">ব</button></div></td>
 </tr>
 <tr>
-<td id='borderright'><div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
-<td id='borderright'><div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
-<td id='borderright'><div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
-<td id='borderright'><div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+<td id='borderright'><div id="div1"><button id="drag1" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped(event)">চ</button></div></td>
+<td id='borderright'><div id="div1"><button id="drag1" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped(event)">ল</button></div></td>
+<td id='borderright'><div id="div1"><button id="drag1" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped(event)">ৰ</button></div></td>
+<td id='borderright'><div id="div1"><button id="drag1" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped(event)">ম</button></div></td>
 </tr>
 <tr>
-<button id="drag1" draggable="true" ondragstart="drag(event)" style="width:50px;height: 50px;">ক</button>
-<button id="drag2" draggable="true" ondragstart="drag(event)" style="width:50px;height: 50px;">ঙ</button>
-<button id="drag3" draggable="true" ondragstart="drag(event)" style="width:50px;height: 50px;">ট</button>
-<button id="drag4" draggable="true" ondragstart="drag(event)" style="width:50px;height: 50px;">ছ</button>
-<button id="drag5" draggable="true" ondragstart="drag(event)" style="width:50px;height: 50px;">ণ</button>
-<button id="drag6" draggable="true" ondragstart="drag(event)" style="width:50px;height: 50px;">ঝ</button>
-<br>
-<button id="drag7" draggable="true" ondragstart="drag(event)" style="width:50px;height: 50px;">গ</button>
-<button id="drag8" draggable="true" ondragstart="drag(event)" style="width:50px;height: 50px;">ঘ</button>
-<button id="drag9" draggable="true" ondragstart="drag(event)" style="width:50px;height: 50px;">ঠ</button>
-<button id="drag10" draggable="true" ondragstart="drag(event)" style="width:50px;height: 50px;">ঞ</button>
-<button id="drag11" draggable="true" ondragstart="drag(event)" style="width:50px;height: 50px;">খ</button>
-<button id="drag12" draggable="true" ondragstart="drag(event)" style="width:50px;height: 50px;">জ</button>
-<br>
-<button id="drag13" draggable="true" ondragstart="drag(event)" style="width:50px;height: 50px;">চ</button>
-<button id="drag14" draggable="true" ondragstart="drag(event)" style="width:50px;height: 50px;">ড</button>
-<button id="drag15" draggable="true" ondragstart="drag(event)" style="width:50px;height: 50px;">ঢ</button>
-<button id="drag16" draggable="true" ondragstart="drag(event)" style="width:50px;height: 50px;">প</button>
-<button id="drag17" draggable="true" ondragstart="drag(event)" style="width:50px;height: 50px;">ম</button>
-<button id="drag18" draggable="true" ondragstart="drag(event)" style="width:50px;height: 50px;">য</button>
+<td id='borderright'><div id="div1"><button id="drag1" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped(event)">ৱ</button></div></td>
+<td id='borderright'><div id="div1"><button id="drag1" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped(event)">শ</button></div></td>
+<td id='borderright'><div id="div1"><button id="drag1" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped(event)">ক্ষ</button></div></td>
+<td id='borderright'><div id="div1"><button id="drag1" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped(event)">ড়</button></div></td>
 </tr>
-<br>
-<button id="drag19" draggable="true" ondragstart="drag(event)" style="width:50px;height: 50px;">ফ</button>
-<button id="drag20" draggable="true" ondragstart="drag(event)" style="width:50px;height: 50px;">ৰ</button>
-<button id="drag21" draggable="true" ondragstart="drag(event)" style="width:50px;height: 50px;">ব</button>
-<button id="drag22" draggable="true" ondragstart="drag(event)" style="width:50px;height: 50px;">স</button>
-<button id="drag23" draggable="true" ondragstart="drag(event)" style="width:50px;height: 50px;">ড়</button>
-<button id="drag24" draggable="true" ondragstart="drag(event)" style="width:50px;height: 50px;">ঁ</button>
-</tr>
-<br>
-<button id="drag25" draggable="true" ondragstart="drag(event)" style="width:50px;height: 50px;">ভ</button>
-<button id="drag26" draggable="true" ondragstart="drag(event)" style="width:50px;height: 50px;">ল</button>
-<button id="drag26" draggable="true" ondragstart="drag(event)" style="width:50px;height: 50px;">ঃ</button>
-<button id="drag28" draggable="true" ondragstart="drag(event)" style="width:50px;height: 50px;">ক্ষ</button>
-<button id="drag29" draggable="true" ondragstart="drag(event)" style="width:50px;height: 50px;">ঢ়</button>
-<button id="drag30" draggable="true" ondragstart="drag(event)" style="width:50px;height: 50px;">ত</button>
-</tr>
-<br>
-<button id="drag31" draggable="true" ondragstart="drag(event)" style="width:50px;height: 50px;">থ</button>
-<button id="drag32" draggable="true" ondragstart="drag(event)" style="width:50px;height: 50px;">ৎ</button>
-<button id="drag33" draggable="true" ondragstart="drag(event)" style="width:50px;height: 50px;">ষ</button>
-<button id="drag34" draggable="true" ondragstart="drag(event)" style="width:50px;height: 50px;">হ</button>
-<button id="drag35" draggable="true" ondragstart="drag(event)" style="width:50px;height: 50px;">ন</button>
-<button id="drag36" draggable="true" ondragstart="drag(event)" style="width:50px;height: 50px;">ড</button>
-</tr>
-<br>
-<button id="drag37" draggable="true" ondragstart="drag(event)" style="width:50px;height: 50px;">দ</button>
-<button id="drag38" draggable="true" ondragstart="drag(event)" style="width:50px;height: 50px;">শ</button>
-<button id="drag39" draggable="true" ondragstart="drag(event)" style="width:50px;height: 50px;">ং</button>
-<button id="drag40" draggable="true" ondragstart="drag(event)" style="width:50px;height: 50px;">ধ</button>
-<button id="drag41" draggable="true" ondragstart="drag(event)" style="width:50px;height: 50px;">য়</button>
+<tr id='g'>
+<td colspan='7'><button id="footer" onclick="location.href='game_a_phala.html'"><a>বেলেগ এটা খেলক!</a></button></td>
 </tr>
 </table></article>
 </body></html>

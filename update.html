@@ -5,7 +5,7 @@
 <style>
 #div1 {
  width: 50px;
- height: 40px;
+ height: 60px;
  padding: 5px;
  border: 1px solid red;
 }
@@ -13,7 +13,7 @@
 #drag16,#drag17,#drag18,#drag19,#drag20,#drag21,#drag22,#drag23,#drag24,#drag25,#drag26,#drag27,#drag28,#drag29,#drag30,
 #drag31,#drag32,#drag33,#drag34,#drag35,#drag36,#drag37,#drag38,#drag39,#drag40,#drag41 {
  width: 50px;
- height: 40px;
+ height: 60px;
  color:Cyan;
  background-color:green;
  font-size: 30px;
@@ -48,107 +48,57 @@ function dropped(evt) {
     evt.stopPropagation();
     source.innerHTML = evt.target.innerHTML;
     evt.target.innerHTML = evt.dataTransfer.getData("text/plain");
+	if(document.getElementById("drag1").innerHTML== "ক")
+	if(document.getElementById("drag2").innerHTML== "খ")
+	if (document.getElementById("drag3").innerHTML== "গ")
+    if (document.getElementById("drag4").innerHTML== "ঘ")
+    if (document.getElementById("drag5").innerHTML== "ঙ")
+    if (document.getElementById("drag6").innerHTML== "চ")
+    if (document.getElementById("drag7").innerHTML== "ছ")
+	if (document.getElementById("drag8").innerHTML== "জ")
+	if (document.getElementById("drag9").innerHTML== "ঝ")
+	if (document.getElementById("drag10").innerHTML== "ঞ")
+	if (document.getElementById("drag11").innerHTML== "ট")
+	if (document.getElementById("drag12").innerHTML== "ঠ")
+	if (document.getElementById("drag13").innerHTML== "ড")
+	if (document.getElementById("drag14").innerHTML== "ঢ")
+	if (document.getElementById("drag15").innerHTML== "ণ")
+	if (document.getElementById("drag16").innerHTML== "ত")
+	if (document.getElementById("drag17").innerHTML== "থ")
+	if (document.getElementById("drag18").innerHTML== "দ")
+	if (document.getElementById("drag19").innerHTML== "ধ")
+	if (document.getElementById("drag20").innerHTML== "ন")
+	if (document.getElementById("drag21").innerHTML== "প")
+	if (document.getElementById("drag22").innerHTML== "ফ")
+	if (document.getElementById("drag23").innerHTML== "ব")
+	if (document.getElementById("drag24").innerHTML== "ভ")
+	if (document.getElementById("drag25").innerHTML== "ম")
+	if (document.getElementById("drag26").innerHTML== "য")
+	if (document.getElementById("drag27").innerHTML== "ৰ")
+	if (document.getElementById("drag28").innerHTML== "ল")
+	if (document.getElementById("drag29").innerHTML== "ৱ")
+	if (document.getElementById("drag30").innerHTML== "শ")
+	if (document.getElementById("drag31").innerHTML== "ষ")
+	if (document.getElementById("drag32").innerHTML== "স")
+	if (document.getElementById("drag33").innerHTML== "হ")
+	if (document.getElementById("drag34").innerHTML== "ক্ষ")
+	if (document.getElementById("drag35").innerHTML== "ড়")
+	if (document.getElementById("drag36").innerHTML== "ঢ়")
+	if (document.getElementById("drag37").innerHTML== "য়")
+	if (document.getElementById("drag38").innerHTML== "ৎ")
+	if (document.getElementById("drag39").innerHTML== "ং")
+	if (document.getElementById("drag40").innerHTML== "ঃ")
+	if (document.getElementById("drag41").innerHTML== "ঁ"){
+	document.getElementById("TEST").innerHTML="<article><table><tr id='g'><td colspan='8'><a id='alert'><image src='https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Gartoon_actions_button_accept.svg/128px-Gartoon_actions_button_accept.svg.png'/></br>সুন্দৰ!</br>তুমি পাৰিলা।</br></br></a></td></tr><tr id='g'><td colspan='4'><button id='footer' onclick='newgame();''><a>বেলেগ এটা খেলা!</a></button></td><td colspan='4'><button  id='footer' onclick='location.reload();'><a>আকৌ খেলা!</a></button></td></tr></table></article>";}
 
     arr[returnIndex(arr, source.id)][0] = evt.target.id;
     arr[returnIndex(arr, evt.target.id)][0] = source.id;
 }
-function myFunction() {
-var a = document.getElementById("drag1").innerHTML;
-var b = document.getElementById("drag2").innerHTML;
-var c = document.getElementById("drag3").innerHTML;
-var d = document.getElementById("drag4").innerHTML;
-var e = document.getElementById("drag5").innerHTML;
-var f = document.getElementById("drag6").innerHTML;
-var g = document.getElementById("drag7").innerHTML;
-var h = document.getElementById("drag8").innerHTML;
-var i = document.getElementById("drag9").innerHTML;
-var j = document.getElementById("drag10").innerHTML;
-var k = document.getElementById("drag11").innerHTML;
-var l = document.getElementById("drag12").innerHTML;
-var m = document.getElementById("drag13").innerHTML;
-var n = document.getElementById("drag14").innerHTML;
-var o = document.getElementById("drag15").innerHTML;
-var p = document.getElementById("drag16").innerHTML;
-var q = document.getElementById("drag17").innerHTML;
-var r = document.getElementById("drag18").innerHTML;
-var t = document.getElementById("drag19").innerHTML;
-var u = document.getElementById("drag20").innerHTML;
-var v = document.getElementById("drag21").innerHTML;
-var w = document.getElementById("drag22").innerHTML;
-var x = document.getElementById("drag23").innerHTML;
-var y = document.getElementById("drag24").innerHTML;
-var z = document.getElementById("drag25").innerHTML;
-var A = document.getElementById("drag26").innerHTML;
-var B = document.getElementById("drag27").innerHTML;
-var C = document.getElementById("drag28").innerHTML;
-var D = document.getElementById("drag29").innerHTML;
-var E = document.getElementById("drag30").innerHTML;
-var F = document.getElementById("drag31").innerHTML;
-var G = document.getElementById("drag32").innerHTML;
-var H = document.getElementById("drag33").innerHTML;
-var I = document.getElementById("drag34").innerHTML;
-var J = document.getElementById("drag35").innerHTML;
-var K = document.getElementById("drag36").innerHTML;
-var L = document.getElementById("drag37").innerHTML;
-var M = document.getElementById("drag38").innerHTML;
-var N = document.getElementById("drag39").innerHTML;
-var O = document.getElementById("drag40").innerHTML;
-var P = document.getElementById("drag41").innerHTML;
-var TEST;
-var TEST1;
-if(a== "ক");
-if(b== "খ");
-if(c== "গ");
-if(d== "ঘ");
-if(e== "ঙ");
-if(f== "চ");
-if(g== "ছ");
-if(h== "জ");
-if(i== "ঝ");
-if(j== "ঞ");
-if(k== "ট");
-if(l== "ঠ");
-if(m== "ড");
-if(n== "ঢ");
-if(o== "ণ");
-if(p== "ত");
-if(q== "থ");
-if(r== "দ");
-if(t== "ধ");
-if(u== "ন");
-if(v== "প");
-if(w== "ফ");
-if(x== "ব");
-if(y== "ভ");
-if(z== "ম");
-if(A== "য");
-if(B== "ৰ");
-if(C== "ল");
-if(D== "ৱ");
-if(E== "শ");
-if(F== "ষ");
-if(G== "স");
-if(H== "হ");
-if(I== "ক্ষ");
-if(J== "ড়");
-if(K== "ঢ়");
-if(L== "য়");
-if(M== "ৎ");
-if(N== "ং");
-if(O== "ঃ");
-if(P== "ঁ") {
-	   TEST="<article><table><tr id='g'><td colspan='8'><a id='alert'><image src='https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Gartoon_actions_button_accept.svg/128px-Gartoon_actions_button_accept.svg.png'/></br>সুন্দৰ!</br>তুমি পাৰিলা।</br></br></a></td></tr><tr id='g'><td colspan='4'><button id='footer' onclick='newgame();''><a>বেলেগ এটা খেলা!</a></button></td><td colspan='4'><button  id='footer' onclick='location.reload();'><a>আকৌ খেলা!</a></button></td></tr></table></article>";
-	   TEST1="<audio autoplay><source src='https://upload.wikimedia.org/wikipedia/commons/8/86/George_Frideric_Handel_-_Music_for_the_Royal_Fireworks_2_%28Bourre%29_The_sound_quality_is_better_music.ogg' type='audio/ogg'></audio>";}
-  else {
-	   TEST="<article><table><tr id='g'><td colspan='8'><a id='alert'><image src='https://upload.wikimedia.org/wikipedia/commons/6/61/Crystal_128_error.png'/></br>শুদ্ধ নাই হোৱা!</br>আকৌ চেষ্টা কৰা।</br></br></a></td></tr><tr id='g'><td colspan='4'><button id='footer' onclick='newgame();''><a>বেলেগ এটা খেলা!</a></button></td><td colspan='4'><button  id='footer' onclick='location.reload();'><a>আকৌ খেলা!</a></button></td></tr></table></article>";
-	   TEST1="<audio autoplay><source src='https://upload.wikimedia.org/wikipedia/commons/b/b2/Lysenko-Sadness_elegy_%28piano%29.ogg' type='audio/ogg'></audio>";}
-	   document.getElementById("TEST").innerHTML=TEST;
-	   document.getElementById("TEST1").innerHTML=TEST1;}
 function newgame() {
     window.location.replace("gameaphala.html");}
 </script>
 </head>
-<body><a id="TEST1"></a>
+<body>
 <a id="TEST"><article><table>
 <tr id='g'>
 <td colspan='8'><button id="footer"><a>বৰ্ণবোৰ ক্ৰমত সজাওঁ আহা:</a></button></td>
@@ -213,7 +163,7 @@ function newgame() {
 <td id='borderright'><div id="div1"><button id="drag41" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped(event)">ড়</button></div></td>
 </tr>
 <tr id='g'>
-<td colspan='8'><button id="footer" onclick="myFunction()"><a>শুদ্ধ হৈছে নে নাই চোৱা!</a></button></td>
+<td colspan='8'><button id="footer" onclick="location.href='index.html'"><a>মুখ্যপৃষ্ঠালৈ...</a></button></td>
 </tr>
 </table></article></a>
 </body></html>

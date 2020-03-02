@@ -66,7 +66,8 @@ function dropped1(evt) {
     source.innerHTML = evt.target.innerHTML;
     evt.target.innerHTML = evt.dataTransfer.getData("text/plain");
 	if(document.getElementById("A").innerHTML== "ক্ল") {
-	   document.getElementById("gi").innerHTML="<article><table><tr id='g'><td colspan='5'><button id='alert'><image src='https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Gartoon_actions_button_accept.svg/128px-Gartoon_actions_button_accept.svg.png'/></br><a>সুন্দৰ!</br>তুমি পাৰিলা।</a></button></td></tr><tr id='g'><td colspan='3'><button id='footer' onclick='newgame();''><a>বেলেগ এটা খেলা!</a></button></td><td colspan='2'><button  id='footer' onclick='location.reload();'><a>আকৌ খেলা!</a></button></td></tr></table></article>";}
+	   document.getElementById("gi").innerHTML="<audio id='audiowin' src='https://upload.wikimedia.org/wikipedia/commons/c/c9/Fondo_musical_sintetizado_4.ogg'></audio><article><table><tr id='g'><td colspan='5'><button id='alert'><image src='https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Gartoon_actions_button_accept.svg/128px-Gartoon_actions_button_accept.svg.png'/></br><a>সুন্দৰ!</br>তুমি পাৰিলা।</a></button></td></tr><tr id='g'><td colspan='3'><button id='footer' onclick='newgame();''><a>বেলেগ এটা খেলা!</a></button></td><td colspan='2'><button  id='footer' onclick='location.reload();'><a>আকৌ খেলা!</a></button></td></tr></table></article>";
+       winplay();}
     if(document.getElementById("A").innerHTML== "ম্ল") {document.getElementById("gh").innerHTML="<tr id='g'><td colspan='5'><button id='footer'>ভুল উত্তৰ</button></td></tr>";}
     if(document.getElementById("A").innerHTML== "ল্ক") {document.getElementById("gh").innerHTML="<tr id='g'><td colspan='5'><button id='footer'>ভুল উত্তৰ</button></td></tr>";}
     if(document.getElementById("A").innerHTML== "ল্ব") {document.getElementById("gh").innerHTML="<tr id='g'><td colspan='5'><button id='footer'>ভুল উত্তৰ</button></td></tr>";}
@@ -92,6 +93,10 @@ function play() {
         audio.play();}
 function dragplay() {
         var audio = document.getElementById("audiodrag");
+        audio.loop = false;
+        audio.play();}
+function winplay() {
+        var audio = document.getElementById("audiowin");
         audio.loop = false;
         audio.play();}
 </script>

@@ -56,6 +56,11 @@
 <tr id='g'>
 <td colspan='5'><button id="footer" onclick="location.href='index.html'"><a>মুখ্যপৃষ্ঠালৈ...</a></button></td>
 </tr></table></article>
+<article><table>
+<tr id='g'>
+<td colspan='2'><input type="button" value="সংগীত" onclick="play()">
+    <audio id="audio" src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Byrd%2C_Earle_of_Salisbury_Pavane_01.wav"></audio></td>
+</tr></table></article>
 <script>
 var source;
 function dragStarted(evt) {
@@ -102,15 +107,9 @@ function dropped2(evt) {
 }
 function newgame() {
     window.location.replace("update.html");}
-  var audio = new Audio('https://upload.wikimedia.org/wikipedia/commons/6/6f/Byrd%2C_Earle_of_Salisbury_Pavane_01.wav');
-  audio.oncanplaythrough = function(){
-audio.play();
-}
-
-audio.loop = true;
-
-audio.onended = function(){
-audio.play();
-}
+function play() {
+        var audio = document.getElementById("audio");
+        audio.loop = true;
+        audio.play();}
 </script>
 </body></html>

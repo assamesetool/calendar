@@ -21,7 +21,7 @@
 }
 </style>
 </head>
-<body onload="play()">
+<body onclick="play()" ontouchstart="play()" ondblclick="play()" ondragstart="dragplay()">
 <article><table>
 <tr id='g'>
 <td colspan='5'><button id="footer"><a>খালি ঠাই পূৰ কৰা:</a></button></td>
@@ -56,11 +56,8 @@
 <tr id='g'>
 <td colspan='5'><button id="footer" onclick="location.href='index.html'"><a>মুখ্যপৃষ্ঠালৈ...</a></button></td>
 </tr></table></article>
-<article><table>
-<tr id='g'>
-<td colspan='2'><input type="button" value="সংগীত" onclick="play()">
-    <audio id="audio" src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Byrd%2C_Earle_of_Salisbury_Pavane_01.wav"></audio></td>
-</tr></table></article>
+<audio id="audio" src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Byrd%2C_Earle_of_Salisbury_Pavane_01.wav"></audio>
+<audio id="audiodrag" src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Big_bite_%28Gravity_Sound%29.wav"></audio>
 <script>
 var source;
 function dragStarted(evt) {
@@ -110,6 +107,10 @@ function newgame() {
 function play() {
         var audio = document.getElementById("audio");
         audio.loop = true;
+        audio.play();}
+function dragplay() {
+        var audio = document.getElementById("audiodrag");
+        audio.loop = false;
         audio.play();}
 </script>
 </body></html>

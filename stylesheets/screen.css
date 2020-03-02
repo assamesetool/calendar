@@ -260,6 +260,40 @@ div.scroll {
 	margin: 0;
 	padding: 0;
 	}
+#A {
+ width: 60px;
+ height: 60px;
+ padding: 5px;
+ color: green;
+ font-size: 40px;
+ border-bottom:2px solid transparent;
+}
+#B {
+ width: 60px;
+ height: 60px;
+ color:Cyan;
+ background-color:green;
+ font-size: 40px;
+ border: 1px solid #aaaaaa;
+ border-radius: 50%;
+}
+#C {
+ width: 60px;
+ height: 60px;
+ color:Cyan;
+ background-color:green;
+ font-size: 40px;
+ border: 1px solid #aaaaaa;
+}
+#D {
+ width: 60px;
+ height: 60px;
+ color:Cyan;
+ background-color:green;
+ font-size: 40px;
+ border: 1px solid #aaaaaa;
+ border-radius: 50%;
+}
 .dropbtn {background-color: #4CAF50;color: white;padding: 16px;font-size: 16px;border: none;cursor: pointer;}
 .dropbtn:hover, .dropbtn:focus {background-color: #3e8e41;}
 #myInput {color:DarkRed;text-shadow:DarkSlateGray 1px 1px 1px;border-box: box-sizing;background-image: url('file:///D:/Calendar/New%20folder/Xobdoxondhan/Search.svg');background-position: 14px 12px;background-repeat: no-repeat;font-size: 16px;padding: 14px 20px 12px 45px;border: none;border-bottom: 1px solid #ddd;}

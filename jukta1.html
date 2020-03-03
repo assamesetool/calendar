@@ -3,31 +3,12 @@
 <head>
 <link rel="stylesheet" href="stylesheets/screen.css">
 </head>
-<style>
-#D,#B,#alert {
-  animation: shake 0.8s;
-  animation-iteration-count: infinite;
-}
-@keyframes shake {
-  0% { transform: translate(1px, 1px) rotate(0deg); }
-  10% { transform: translate(-1px, -2px) rotate(-1deg); }
-  20% { transform: translate(-3px, 0px) rotate(1deg); }
-  30% { transform: translate(3px, 2px) rotate(0deg); }
-  40% { transform: translate(1px, -1px) rotate(1deg); }
-  50% { transform: translate(-1px, 2px) rotate(-1deg); }
-  60% { transform: translate(-3px, 1px) rotate(0deg); }
-  70% { transform: translate(3px, 1px) rotate(-1deg); }
-  80% { transform: translate(-1px, -1px) rotate(1deg); }
-  90% { transform: translate(1px, 2px) rotate(0deg); }
-  100% { transform: translate(1px, -2px) rotate(-1deg); }
-}
-</style>
-<body id="gi" ondragstart="dragplay()">
+<body id="gi" ondragstart="dragplay()" style="background-size:360px 430px;background-image : url('images/8.GIF');background-repeat: no-repeat;">
 <article><table>
 </table></article>
 <article><table>
 <tr id='g'>
-	<td colspan='5'><button id="footer"><a>তলৰ যুক্তাক্ষৰবোৰৰ পৰা শুদ্ধটো আনি</br>খালি ঠাই পূৰ কৰা:</a></button></td>
+<td colspan='5'><button id='footer'><a>তলৰ যুক্তাক্ষৰবোৰৰ পৰা শুদ্ধটো আনি</br>খালি ঠাই পূৰ কৰা:</a></button></td>
 </tr>
 </table></article>
 <article><table>
@@ -43,24 +24,36 @@
 </table></article>
 <article><table>
 <tr>
-<td id="borderbottom"><button id="B" class="M" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped2(event);">ক্ল</button></td>
-<td id="borderbottom"><button id="D" class="M" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped2(event);">ম্ল</button></td>
-<td id="borderbottom"><button id="D" class="M" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped2(event);">ল্ক</button></td>
-<td id="borderbottom"><button id="D" class="M" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped2(event);">প্ল</button></td>
-<td id="borderbottom"><button id="D" class="M" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped2(event);">ল্ব</button></td>
+<td id="bottomright" style="background-color:green"><button id="C">প</button></td>
+<td id="bottomright" style="background-color:green"><button id="C">+</button></td>
+<td id="bottomright" style="background-color:green"><button id="C">ল</button></td>
+<td id="bottomright" style="background-color:green"><button id="C">=</button></td>
+<td id="borderbottom"><button id="G" class="M" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped1(event);"></button></td>
 </tr>
-</table></article>
-<article><table id='gh'>
 </table></article>
 <article><table>
-<tr id='g'>
-<td colspan='2'><button id="footer" onclick="location.href='update.html'"><a>খেল ১</a></button></td>
-<td><button id="footer"><a></a></button></td>
-<td colspan='2'><button id="footer" onclick="location.href='gameaphala.html'"><a>খেল ২</a></button></td>
+<tr>
+<td id="bottomright" style="background-color:green"><button id="C">ম</button></td>
+<td id="bottomright" style="background-color:green"><button id="C">+</button></td>
+<td id="bottomright" style="background-color:green"><button id="C">ল</button></td>
+<td id="bottomright" style="background-color:green"><button id="C">=</button></td>
+<td id="borderbottom"><button id="H" class="M" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped1(event);"></button></td>
 </tr>
-<tr id='g'>
-<td colspan='5'><button id="footer" onclick="location.href='index.html'"><a>মুখ্যপৃষ্ঠালৈ...</a></button></td>
-</tr></table></article>
+</table></article>
+<article><table>
+</table></article>
+<article style='animation: shake4 1.5s;animation-iteration-count: infinite;'><table>
+<tr>
+<td id="borderbottom"><button id="B" class="M" draggable="true" ondragstart="dragStarted(event)">ক্ল</button></td>
+<td id="borderbottom"><button id="D" class="M" draggable="true" ondragstart="dragStarted(event)">ম্ল</button></td>
+<td id="borderbottom"><button id="D" class="M" draggable="true" ondragstart="dragStarted(event)">ল্ক</button></td>
+<td id="borderbottom"><button id="D" class="M" draggable="true" ondragstart="dragStarted(event)">প্ল</button></td>
+<td id="borderbottom"><button id="D" class="M" draggable="true" ondragstart="dragStarted(event)">ল্ব</button></td>
+</tr>
+</table></article>
+<article><table>
+</table></article>
+<a id='gh'></a>
 <audio id="audio" src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Byrd%2C_Earle_of_Salisbury_Pavane_01.wav"></audio>
 <audio id="audiodrag" src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Big_bite_%28Gravity_Sound%29.wav"></audio>
 <script>
@@ -88,16 +81,23 @@ function dropped1(evt) {
     evt.stopPropagation();
     source.innerHTML = evt.target.innerHTML;
     evt.target.innerHTML = evt.dataTransfer.getData("text/plain");
-	if(document.getElementById("A").innerHTML== "ক্ল") {
-	   document.getElementById("gi").innerHTML="<audio id='audiowin' src='https://upload.wikimedia.org/wikipedia/commons/c/c9/Fondo_musical_sintetizado_4.ogg'></audio><article><table></table></article><article><table><tr id='g'><td colspan='5'><button id='alert'><image src='https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Gartoon_actions_button_accept.svg/128px-Gartoon_actions_button_accept.svg.png'/></br><a>সুন্দৰ!</br>তুমি পাৰিলা।</a></button></td></tr></table></article><article><table></table></article><article><table><tr id='g'><td colspan='3'><button id='footer' onclick='newgame();''><a>বেলেগ এটা খেলা!</a></button></td><td colspan='2'><button  id='footer' onclick='location.reload();'><a>আকৌ খেলা!</a></button></td></tr></table></article>";
+	if(document.getElementById("A").innerHTML== "ক্ল")
+	if(document.getElementById("G").innerHTML== "প্ল")
+	if(document.getElementById("H").innerHTML== "ম্ল"){
+	   document.getElementById("gi").innerHTML="<audio id='audiowin' src='https://upload.wikimedia.org/wikipedia/commons/c/c9/Fondo_musical_sintetizado_4.ogg'></audio><article><table></table></article><div id='win'><image src='https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Gartoon_actions_button_accept.svg/128px-Gartoon_actions_button_accept.svg.png'/></br>সুন্দৰ!</br>তুমি পাৰিলা।</br></div></br><article><table></table></article></br><button id='alert' onclick='newgame();''>বেলেগ এটা খেলা!</button> <button  id='gamewin' onclick='location.reload();'>আকৌ খেলা!</button></br>";
        winplay();}
-    if(document.getElementById("A").innerHTML== "ম্ল") {document.getElementById("gh").innerHTML="<tr id='g'><td colspan='5'><button id='footer'>ভুল উত্তৰ</button></td></tr>";}
-    if(document.getElementById("A").innerHTML== "ল্ক") {document.getElementById("gh").innerHTML="<tr id='g'><td colspan='5'><button id='footer'>ভুল উত্তৰ</button></td></tr>";}
-    if(document.getElementById("A").innerHTML== "ল্ব") {document.getElementById("gh").innerHTML="<tr id='g'><td colspan='5'><button id='footer'>ভুল উত্তৰ</button></td></tr>";}
-    if(document.getElementById("A").innerHTML== "প্ল")	{document.getElementById("gh").innerHTML="<tr id='g'><td colspan='5'><button id='footer'>ভুল উত্তৰ</button></td></tr>";}
-
-    arr[returnIndex(arr, source.id)][0] = evt.target.id;
-    arr[returnIndex(arr, evt.target.id)][0] = source.id;
+    if(document.getElementById("A").innerHTML== "ম্ল") {document.getElementById("gh").innerHTML="<button id='E'>ভুল উত্তৰ</button>";}
+    if(document.getElementById("A").innerHTML== "ল্ক") {document.getElementById("gh").innerHTML="<button id='E'>ভুল উত্তৰ</button>";}
+    if(document.getElementById("A").innerHTML== "ল্ব") {document.getElementById("gh").innerHTML="<button id='E'>ভুল উত্তৰ</button>";}
+    if(document.getElementById("A").innerHTML== "প্ল")	{document.getElementById("gh").innerHTML="<button id='E'>ভুল উত্তৰ</button>";}
+	if(document.getElementById("G").innerHTML== "ম্ল") {document.getElementById("gh").innerHTML="<button id='E'>ভুল উত্তৰ</button>";}
+    if(document.getElementById("G").innerHTML== "ল্ক") {document.getElementById("gh").innerHTML="<button id='E'>ভুল উত্তৰ</button>";}
+    if(document.getElementById("G").innerHTML== "ল্ব") {document.getElementById("gh").innerHTML="<button id='E'>ভুল উত্তৰ</button>";}
+    if(document.getElementById("G").innerHTML== "ক্ল")	{document.getElementById("gh").innerHTML="<button id='E'>ভুল উত্তৰ</button>";}
+	if(document.getElementById("H").innerHTML== "ক্ল") {document.getElementById("gh").innerHTML="<button id='E'>ভুল উত্তৰ</button>";}
+    if(document.getElementById("H").innerHTML== "ল্ক") {document.getElementById("gh").innerHTML="<button id='E'>ভুল উত্তৰ</button>";}
+    if(document.getElementById("H").innerHTML== "ল্ব") {document.getElementById("gh").innerHTML="<button id='E'>ভুল উত্তৰ</button>";}
+    if(document.getElementById("H").innerHTML== "প্ল")	{document.getElementById("gh").innerHTML="<button id='E'>ভুল উত্তৰ</button>";}
 }
 function dropped2(evt) {
     evt.preventDefault();

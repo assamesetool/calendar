@@ -13,7 +13,7 @@ article {
 	padding: 2px;
 	overflow: hidden;
 	margin-bottom: 5px;
-	background-color:Lavender;
+	background-color:transparent;
 	 -moz-box-shadow: 0px 5px 12px rgba(000,000,000,0.5);
 	 -webkit-box-shadow:0px 5px 12px rgba(000,000,000,0.5);
 	 box-shadow:0px 5px 12px rgba(000,000,000,0.5);
@@ -240,6 +240,16 @@ div.scroll {
 #g {
 	background-color:green;
 }
+#header {
+	background-color:transparent;
+	font-size:20px;
+	text-align:center;
+	color:orange;
+	text-shadow:black 1px 1px 1px;
+	width:99%;
+	margin: 0;
+	padding: 0;
+	}
 #footer {
 	background-color:green;
 	font-size:20px;
@@ -307,10 +317,11 @@ div.scroll {
 #B {
  width: 60px;
  height: 60px;
- color:Cyan;
- background-color:green;
+ background-color:#f4511e;
+ color: #FFFFFF;
+ text-shadow:black 1px 1px 1px;
  font-size: 40px;
- border: 1px solid #aaaaaa;
+ border: 1px solid black;
  border-radius: 50%;
  animation: shake3 0.8s;
  animation-iteration-count: infinite;
@@ -321,21 +332,22 @@ div.scroll {
  color:Cyan;
  background-color:green;
  font-size: 40px;
- border: 1px solid #aaaaaa;
+ border: 1px solid black;
 }
 #D {
  width: 60px;
  height: 60px;
- color:Cyan;
- background-color:green;
+ background-color:#f4511e;
+ color: #FFFFFF;
+ text-shadow:black 1px 1px 1px;
  font-size: 40px;
- border: 1px solid #aaaaaa;
+ border: 1px solid black;
  border-radius: 50%;
  animation: shake3 0.8s;
  animation-iteration-count: infinite;
 }
 #E {
- width: 100px;
+ width: 150px;
  height: 50px;
  padding: 5px;
  color: orange;
@@ -346,7 +358,7 @@ div.scroll {
  animation-iteration-count: infinite;
 }
 #F {
- width: 100px;
+ width: 150px;
  height: 50px;
  padding: 5px;
  color: orange;
@@ -438,6 +450,10 @@ div.scroll {
   50%{font-size: 40px;}
   75%{font-size:35px;}
   100%{font-size:30px;}
+}
+#gamebg {
+	background-image : url("images/9.jpg");
+	background-repeat: no-repeat;
 }
 .dropbtn {background-color: #4CAF50;color: white;padding: 16px;font-size: 16px;border: none;cursor: pointer;}
 .dropbtn:hover, .dropbtn:focus {background-color: #3e8e41;}

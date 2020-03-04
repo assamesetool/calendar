@@ -1,14 +1,14 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html onclick="play()" ontouchstart="play()" ondblclick="play()">
 <head>
 <link rel="stylesheet" href="stylesheets/screen.css">
 </head>
-<body id="gi" ondragstart="dragplay()" style="background-size:360px 430px;background-image : url('images/8.GIF');background-repeat: no-repeat;">
-<article><table>
+<body id="gamebg" ondragstart="dragplay()">
+<div id="gi"><article><table>
 </table></article>
 <article><table>
-<tr id='g'>
-<td colspan='5'><button id='footer'><a>তলৰ যুক্তাক্ষৰবোৰৰ পৰা শুদ্ধটো আনি</br>খালি ঠাই পূৰ কৰা:</a></button></td>
+<tr>
+<td colspan='5'><button id='header'><a>তলৰ যুক্তাক্ষৰবোৰৰ পৰা শুদ্ধটো আনি</br>খালি ঠাই পূৰ কৰা:</a></button></td>
 </tr>
 </table></article>
 <article><table>
@@ -53,7 +53,7 @@
 </table></article>
 <article><table>
 </table></article>
-<a id='gh'></a>
+<a id='gh'></a></div>
 <audio id="audio" src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Byrd%2C_Earle_of_Salisbury_Pavane_01.wav"></audio>
 <audio id="audiodrag" src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Big_bite_%28Gravity_Sound%29.wav"></audio>
 <script>

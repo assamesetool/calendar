@@ -452,7 +452,7 @@ div.scroll {
   100%{font-size:30px;}
 }
 #gamebg {
-	background-image : url(".../images/9.jpg");
+	background-image : url("../images/9.jpg");
 	background-repeat: no-repeat;
 }
 .dropbtn {background-color: #4CAF50;color: white;padding: 16px;font-size: 16px;border: none;cursor: pointer;}

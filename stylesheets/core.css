@@ -300,3 +300,25 @@ div.scroll {
  animation: shake4 1s;
  animation-iteration-count: infinite;
 }
+#drag42,#drag44,#drag46,#drag48,#drag50,#drag52 {
+ width: 60px;
+ height: 70px;
+ color:Cyan;
+ background-color:green;
+ font-size: 40px;
+ border: 1px solid black;
+ border-radius: 50%;
+ animation: shake3 1s;
+ animation-iteration-count: infinite;
+}
+#drag43,#drag45,#drag47,#drag49,#drag51 {
+ width: 60px;
+ height: 70px;
+ color:Cyan;
+ background-color:#f4511e;
+ font-size: 40px;
+ border: 1px solid black;
+ border-radius: 50%;
+ animation: shake4 1s;
+ animation-iteration-count: infinite;
+}

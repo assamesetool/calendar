@@ -281,7 +281,7 @@ div.scroll {
  height: 50px;
  color:Cyan;
  background-color:green;
- font-size: 30px;
+ font-size: 40px;
  border: 1px solid black;
  border-radius: 50%;
  animation: shake3 1s;
@@ -294,7 +294,7 @@ div.scroll {
  height: 50px;
  color:Cyan;
  background-color:#f4511e;
- font-size: 30px;
+ font-size: 40px;
  border: 1px solid black;
  border-radius: 50%;
  animation: shake4 1s;

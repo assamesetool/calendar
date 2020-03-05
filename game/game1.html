@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html onclick="play()" ontouchstart="play()" ondblclick="play()">
 <head>
 <link rel="stylesheet" href="../stylesheets/core.css">
 </head>
-<body id="gamebg"><div id="gi">
+<body id="gamebg" ondragstart="dragplay()">
+<div id="gi">
 <article><table>
 <tr>
 <td colspan='5'><button id='header'><a>তলৰ যুক্তাক্ষৰবোৰৰ পৰা শুদ্ধটো আনি</br>খালি ঠাই পূৰ কৰা:</a></button></td>
@@ -35,6 +36,8 @@
 <td><button id="B" class="M" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped2(event);">ল্ব</button></td>
 </tr>
 </table></article></div>
+<audio id="audio" src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Byrd%2C_Earle_of_Salisbury_Pavane_01.wav"></audio>
+<audio id="audiodrag" src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Big_bite_%28Gravity_Sound%29.wav"></audio>
 <script>
 var source;
 function dragStarted(evt) {
@@ -73,11 +76,20 @@ function dropped2(evt) {
     evt.stopPropagation();
     source.innerHTML = evt.target.innerHTML;
     evt.target.innerHTML = evt.dataTransfer.getData("text/plain");
-
-    arr[returnIndex(arr, source.id)][0] = evt.target.id;
-    arr[returnIndex(arr, evt.target.id)][0] = source.id;
 }
 function newgame() {
     window.location.replace("../game.html");}
+function play() {
+        var audio = document.getElementById("audio");
+        audio.loop = true;
+        audio.play();}
+function dragplay() {
+        var audio = document.getElementById("audiodrag");
+        audio.loop = false;
+        audio.play();}
+function winplay() {
+        var audio = document.getElementById("audiowin");
+        audio.loop = false;
+        audio.play();}
 </script>
 </body></html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html onclick="play()" ontouchstart="play()" ondblclick="play()">
+<head>
+<link rel="stylesheet" href="../stylesheets/core.css">
+</head>
+<body id="gamebg" ondragstart="dragplay()">
+<div id="gi">
+<article><table>
+<td colspan='8'><button id="header"><a>বৰ্ণবোৰ ক্ৰমত সজাওঁ আহা:</a></button></td>
+</table><table>
+<td colspan='2'><button id="drag42" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped(event)">ঋ</button></td>
+<td colspan='2'><button id="drag43" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped(event)">ও</button></td>
+<td colspan='2'><button id="drag44" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped(event)">উ</button></td>
+<td colspan='2'><button id="drag45" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped(event)">ঐ</button></td>
+</table><table>
+<td colspan='2'><button id="drag46" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped(event)">ঔ</button></td>
+<td colspan='2'><button id="drag47" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped(event)">আ</button></td>
+<td colspan='2'><button id="drag48" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped(event)">ই</button></td>
+</table><table>
+<td colspan='2'><button id="drag49" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped(event)">ঊ</button></td>
+<td colspan='2'><button id="drag50" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped(event)">ঈ</button></td>
+<td colspan='2'><button id="drag51" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped(event)">অ</button></td>
+<td colspan='2'><button id="drag52" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped(event)">এ</button></td>
+</table></article></div>
+<audio id="audio" src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Byrd%2C_Earle_of_Salisbury_Pavane_01.wav"></audio>
+<audio id="audiodrag" src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Big_bite_%28Gravity_Sound%29.wav"></audio>
+<script>
+var source;
+function dragStarted(evt) {
+    source = evt.target;
+    evt.dataTransfer.setData("text/plain", evt.target.innerHTML);
+    evt.dataTransfer.effectAllowed = "move";
+    document.getElementById('uldPopup').style.display = "none";
+}
+
+function draggingOver(evt) {
+    evt.preventDefault();
+    evt.dataTransfer.dropEffect = "move";
+}
+
+function draggingLeave(evt) {
+    evt.preventDefault();
+    evt.dataTransfer.dropEffect = "move";
+}
+
+function dropped(evt) {
+    evt.preventDefault();
+    evt.stopPropagation();
+    source.innerHTML = evt.target.innerHTML;
+    evt.target.innerHTML = evt.dataTransfer.getData("text/plain");
+	if (document.getElementById("drag42").innerHTML== "অ")
+	if (document.getElementById("drag43").innerHTML== "আ")
+	if (document.getElementById("drag44").innerHTML== "ই")
+	if (document.getElementById("drag45").innerHTML== "ঈ")
+	if (document.getElementById("drag46").innerHTML== "উ")
+	if (document.getElementById("drag47").innerHTML== "ঊ")
+	if (document.getElementById("drag48").innerHTML== "ঋ")
+	if (document.getElementById("drag49").innerHTML== "এ")
+	if (document.getElementById("drag50").innerHTML== "ঐ")
+	if (document.getElementById("drag51").innerHTML== "ও")
+	if (document.getElementById("drag52").innerHTML== "ঔ"){
+	document.getElementById("gi").innerHTML="<audio id='audiowin' src='https://upload.wikimedia.org/wikipedia/commons/c/c9/Fondo_musical_sintetizado_4.ogg'></audio><article><table></table></article><div id='win'><image src='https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Gartoon_actions_button_accept.svg/128px-Gartoon_actions_button_accept.svg.png'/></br>সুন্দৰ!</br>তুমি পাৰিলা।</br></div></br><article><table></table></article></br><button id='alert' onclick='newgame();''>বেলেগ এটা খেলা!</button> <button  id='gamewin' onclick='location.reload();'>আকৌ খেলা!</button></br>";
+       winplay();}
+}
+function newgame() {
+    window.location.replace("../game.html");}
+function play() {
+        var audio = document.getElementById("audio");
+        audio.loop = true;
+        audio.play();}
+function dragplay() {
+        var audio = document.getElementById("audiodrag");
+        audio.loop = false;
+        audio.play();}
+function winplay() {
+        var audio = document.getElementById("audiowin");
+        audio.loop = false;
+        audio.play();}
+</script></body></html>

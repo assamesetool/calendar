@@ -277,7 +277,7 @@ div.scroll {
 #drag2,#drag4,#drag6,#drag8,#drag10,#drag12,#drag14,
 #drag16,#drag18,#drag20,#drag22,#drag24,#drag26,#drag28,#drag31,
 #drag33,#drag34,#drag36,#drag39,#drag41 {
- width: 50px;
+ width: 60px;
  height: 50px;
  color:Cyan;
  background-color:green;
@@ -290,7 +290,7 @@ div.scroll {
 #drag1,#drag3,#drag5,#drag7,#drag9,#drag11,#drag13,#drag15,
 #drag17,#drag19,#drag21,#drag23,#drag25,#drag27,#drag29,
 #drag30,#drag32,#drag35,#drag37,#drag38,#drag40 {
- width: 50px;
+ width: 60px;
  height: 50px;
  color:Cyan;
  background-color:#f4511e;

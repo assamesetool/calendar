@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="../stylesheets/core.css">
+</head>
+<body id="gamebg"><div id="gi">
+<article><table>
+<tr>
+<td colspan='5'><button id='header'><a>তলৰ যুক্তাক্ষৰবোৰৰ পৰা শুদ্ধটো আনি</br>খালি ঠাই পূৰ কৰা:</a></button></td>
+</tr>
+<tr>
+<td colspan='4'><button id="AAA"> ক + ল =</button></td>
+<td><button id="P" class="M" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped1(event);"></button></td>
+</tr>
+<tr>
+<td colspan='4'><button id="AAA"> প + ল =</button></td>
+<td><button id="Q" class="M" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped1(event);"></button></td>
+</tr>
+<tr>
+<td colspan='4'><button id="AAA"> ম + ল =</button></td>
+<td><button id="R" class="M" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped1(event);"></button></td>
+</tr>
+<tr>
+<td colspan='4'><button id="AAA"> ল + ব =</button></td>
+<td><button id="S" class="M" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped1(event);"></button></td>
+</tr>
+<tr>
+<td colspan='4'><button id="AAA"> ল + ক =</button></td>
+<td><button id="T" class="M" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped1(event);"></button></td>
+</tr><tr>
+<td><button id="B" class="M" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped2(event);">ক্ল</button></td>
+<td><button id="D" class="M" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped2(event);">ম্ল</button></td>
+<td><button id="B" class="M" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped2(event);">ল্ক</button></td>
+<td><button id="D" class="M" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped2(event);">প্ল</button></td>
+<td><button id="B" class="M" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped2(event);">ল্ব</button></td>
+</tr>
+</table></article></div>
+<script>
+var source;
+function dragStarted(evt) {
+    source = evt.target;
+    evt.dataTransfer.setData("text/plain", evt.target.innerHTML);
+    evt.dataTransfer.effectAllowed = "move";
+    document.getElementById('uldPopup').style.display = "none";
+}
+
+function draggingOver(evt) {
+    evt.preventDefault();
+    evt.dataTransfer.dropEffect = "move";
+	document.getElementById("gh").innerHTML= "";
+}
+
+function draggingLeave(evt) {
+    evt.preventDefault();
+    evt.dataTransfer.dropEffect = "move";
+}
+
+function dropped1(evt) {
+    evt.preventDefault();
+    evt.stopPropagation();
+    source.innerHTML = evt.target.innerHTML;
+    evt.target.innerHTML = evt.dataTransfer.getData("text/plain");
+	if(document.getElementById("P").innerHTML== "ক্ল")
+	if(document.getElementById("Q").innerHTML== "প্ল")
+	if(document.getElementById("R").innerHTML== "ম্ল")
+	if(document.getElementById("S").innerHTML== "ল্ব")
+	if(document.getElementById("T").innerHTML== "ল্ক"){
+	   document.getElementById("gi").innerHTML="<audio id='audiowin' src='https://upload.wikimedia.org/wikipedia/commons/c/c9/Fondo_musical_sintetizado_4.ogg'></audio><article><table></table></article><div id='win'><image src='https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Gartoon_actions_button_accept.svg/128px-Gartoon_actions_button_accept.svg.png'/></br>সুন্দৰ!</br>তুমি পাৰিলা।</br></div></br><article><table></table></article></br><button id='alert' onclick='newgame();''>বেলেগ এটা খেলা!</button> <button  id='gamewin' onclick='location.reload();'>আকৌ খেলা!</button></br>";
+       winplay();}
+}
+function dropped2(evt) {
+    evt.preventDefault();
+    evt.stopPropagation();
+    source.innerHTML = evt.target.innerHTML;
+    evt.target.innerHTML = evt.dataTransfer.getData("text/plain");
+
+    arr[returnIndex(arr, source.id)][0] = evt.target.id;
+    arr[returnIndex(arr, evt.target.id)][0] = source.id;
+}
+function newgame() {
+    window.location.replace("../game.html");}
+</script>
+</body></html>

@@ -185,7 +185,7 @@ div.scroll {
  animation-iteration-count: infinite;
 }
 #gamebg {
-	background-image : url("file:///D:/koli/HTML/BELBARI/9.jpg");
+	background-image : url("../images/9.jpg");
 	background-repeat: no-repeat;
 	background-size:350px 550px;
 }

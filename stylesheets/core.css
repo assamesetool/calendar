@@ -270,9 +270,6 @@ div.scroll {
   0% { transform: translate(1px, 1px) rotate(1deg); }
   50% { transform: translate(-1px, 2px) rotate(0deg); }
   100% { transform: translate(1px, 1px) rotate(-1deg); }
-  0% {font-size:39px;}
-  50%{font-size: 40px;}
-  100%{font-size: 39px;}
 }
 @keyframes shake6 {
   0% { transform: translate(1px, 3px) rotate(1deg); }

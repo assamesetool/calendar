@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html onclick="play()" ontouchstart="play()" ondblclick="play()">
+<head>
+<link rel="stylesheet" href="../stylesheets/core.css">
+</head>
+<body id="gamebg" ondragstart="dragplay()">
+<div id="gi"><a hidden id="f"></a><a hidden id="g"></a><a hidden id="h"></a><a hidden id="i"></a><a hidden id="j"></a>
+<article><table>
+<td><button id="header"><a>বৰ্ণবোৰ ক্ৰমত সজাওঁ আহা:</a></button></td>
+</table></article>
+<article><table>
+<td><button id="drag1" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped(event)">জ</button></td>
+<td><button id="drag2" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped(event)">ক</button></td>
+<td><button id="drag3" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped(event)">ঠ</button></td>
+<td><button id="drag4" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped(event)">ঘ</button></td>
+<td><button id="drag5" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped(event)">ল</button></td>
+</table><table>
+<td><button id="drag6" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped(event)">ঝ</button></td>
+<td><button id="drag7" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped(event)">ব</button></td>
+<td><button id="drag8" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped(event)">ঢ়</button></td>
+<td><button id="drag9" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped(event)">ল</button></td>
+<td><button id="drag10" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped(event)">ষ</button></td>
+</table><table>
+<td><button id="drag11" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped(event)">গ</button></td>
+<td><button id="drag12" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped(event)">ধ</button></td>
+<td><button id="drag13" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped(event)">ছ</button></td>
+<td><button id="drag14" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped(event)">ঠ</button></td>
+<td><button id="drag15" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped(event)">ট</button></td>
+</table><table>
+<td><button id="drag16" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped(event)">ত</button></td>
+<td><button id="drag17" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped(event)">ভ</button></td>
+<td><button id="drag18" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped(event)">য</button></td>
+<td><button id="drag19" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped(event)">খ</button></td>
+<td><button id="drag20" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped(event)">ল</button></td>
+</table><table>
+<td><button id="drag21" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped(event)">ঙ</button></td>
+<td><button id="drag22" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped(event)">ড</button></td>
+<td><button id="drag23" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped(event)">ল</button></td>
+<td><button id="drag24" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped(event)">ফ</button></td>
+<td><button id="drag25" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped(event)">ট</button></td>
+</table></article></div>
+<audio id="audio" src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Byrd%2C_Earle_of_Salisbury_Pavane_01.wav"></audio>
+<audio id="audiodrag" src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Big_bite_%28Gravity_Sound%29.wav"></audio>
+<script>
+var source;
+function dragStarted(evt) {
+    source = evt.target;
+    evt.dataTransfer.setData("text/plain", evt.target.innerHTML);
+    evt.dataTransfer.effectAllowed = "move";
+    document.getElementById('uldPopup').style.display = "none";
+}
+
+function draggingOver(evt) {
+    evt.preventDefault();
+    evt.dataTransfer.dropEffect = "move";
+}
+
+function draggingLeave(evt) {
+    evt.preventDefault();
+    evt.dataTransfer.dropEffect = "move";
+}
+
+function dropped(evt) {
+    evt.preventDefault();
+    evt.stopPropagation();
+    source.innerHTML = evt.target.innerHTML;
+    evt.target.innerHTML = evt.dataTransfer.getData("text/plain");
+	if (document.getElementById("drag1").innerHTML== "ক")
+	if (document.getElementById("drag2").innerHTML== "ল"){
+	document.getElementById("drag1").innerHTML="ক";
+	document.getElementById("drag2").innerHTML="ল";
+	document.getElementById("drag3").innerHTML="";
+	document.getElementById("drag4").innerHTML="";
+	document.getElementById("drag5").innerHTML="";
+	document.getElementById("f").innerHTML="j";}
+	if (document.getElementById("drag2").innerHTML== "ক")
+	if (document.getElementById("drag3").innerHTML== "ল"){
+	document.getElementById("drag1").innerHTML="";
+	document.getElementById("drag2").innerHTML="ক";
+	document.getElementById("drag3").innerHTML="ল";
+	document.getElementById("drag4").innerHTML="";
+	document.getElementById("drag5").innerHTML="";
+	document.getElementById("f").innerHTML="j";}
+	if (document.getElementById("drag3").innerHTML== "ক")
+	if (document.getElementById("drag4").innerHTML== "ল"){
+	document.getElementById("drag1").innerHTML="";
+	document.getElementById("drag2").innerHTML="";
+	document.getElementById("drag3").innerHTML="ক";
+	document.getElementById("drag4").innerHTML="ল";
+	document.getElementById("drag5").innerHTML="";
+	document.getElementById("f").innerHTML="j";}
+	if (document.getElementById("drag4").innerHTML== "ক")
+	if (document.getElementById("drag5").innerHTML== "ল"){
+	document.getElementById("drag1").innerHTML="";
+	document.getElementById("drag2").innerHTML="";
+	document.getElementById("drag3").innerHTML="";
+	document.getElementById("drag4").innerHTML="ক";
+	document.getElementById("drag5").innerHTML="ল";
+	document.getElementById("f").innerHTML="j";}
+	if (document.getElementById("drag6").innerHTML== "ব")
+	if (document.getElementById("drag7").innerHTML== "ল"){
+	document.getElementById("drag6").innerHTML="ব";
+	document.getElementById("drag7").innerHTML="ল";
+	document.getElementById("drag8").innerHTML="";
+	document.getElementById("drag9").innerHTML="";
+	document.getElementById("drag10").innerHTML="";
+	document.getElementById("g").innerHTML="j";}
+	if (document.getElementById("drag7").innerHTML== "ব")
+	if (document.getElementById("drag8").innerHTML== "ল"){
+	document.getElementById("drag6").innerHTML="";
+	document.getElementById("drag7").innerHTML="ব";
+	document.getElementById("drag8").innerHTML="ল";
+	document.getElementById("drag9").innerHTML="";
+	document.getElementById("drag10").innerHTML="";
+	document.getElementById("g").innerHTML="j";}
+	if (document.getElementById("drag8").innerHTML== "ব")
+	if (document.getElementById("drag9").innerHTML== "ল"){
+	document.getElementById("drag6").innerHTML="";
+	document.getElementById("drag7").innerHTML="";
+	document.getElementById("drag8").innerHTML="ব";
+	document.getElementById("drag9").innerHTML="ল";
+	document.getElementById("drag10").innerHTML="";
+	document.getElementById("g").innerHTML="j";}
+	if (document.getElementById("drag9").innerHTML== "ব")
+	if (document.getElementById("drag10").innerHTML== "ল"){
+	document.getElementById("drag6").innerHTML="";
+	document.getElementById("drag7").innerHTML="";
+	document.getElementById("drag8").innerHTML="";
+	document.getElementById("drag9").innerHTML="ব";
+	document.getElementById("drag10").innerHTML="ল";
+	document.getElementById("g").innerHTML="j";}
+	if (document.getElementById("drag11").innerHTML== "গ")
+	if (document.getElementById("drag12").innerHTML== "ছ"){
+	document.getElementById("drag11").innerHTML="গ";
+	document.getElementById("drag12").innerHTML="ছ";
+	document.getElementById("drag13").innerHTML="";
+	document.getElementById("drag14").innerHTML="";
+	document.getElementById("drag15").innerHTML="";
+	document.getElementById("h").innerHTML="j";}
+	if (document.getElementById("drag12").innerHTML== "গ")
+	if (document.getElementById("drag13").innerHTML== "ছ"){
+	document.getElementById("drag11").innerHTML="";
+	document.getElementById("drag12").innerHTML="গ";
+	document.getElementById("drag13").innerHTML="ছ";
+	document.getElementById("drag14").innerHTML="";
+	document.getElementById("drag15").innerHTML="";
+	document.getElementById("h").innerHTML="j";}
+	if (document.getElementById("drag13").innerHTML== "গ")
+	if (document.getElementById("drag14").innerHTML== "ছ"){
+	document.getElementById("drag11").innerHTML="";
+	document.getElementById("drag12").innerHTML="";
+	document.getElementById("drag13").innerHTML="গ";
+	document.getElementById("drag14").innerHTML="ছ";
+	document.getElementById("drag15").innerHTML="";
+	document.getElementById("h").innerHTML="j";}
+	if (document.getElementById("drag14").innerHTML== "গ")
+	if (document.getElementById("drag15").innerHTML== "ছ"){
+	document.getElementById("drag11").innerHTML="";
+	document.getElementById("drag12").innerHTML="";
+	document.getElementById("drag13").innerHTML="";
+	document.getElementById("drag14").innerHTML="গ";
+	document.getElementById("drag15").innerHTML="ছ";
+	document.getElementById("h").innerHTML="j";}
+	if (document.getElementById("drag16").innerHTML== "ত")
+	if (document.getElementById("drag17").innerHTML== "ল"){
+	document.getElementById("drag16").innerHTML="ত";
+	document.getElementById("drag17").innerHTML="ল";
+	document.getElementById("drag18").innerHTML="";
+	document.getElementById("drag19").innerHTML="";
+	document.getElementById("drag20").innerHTML="";
+	document.getElementById("i").innerHTML="j";}
+	if (document.getElementById("drag17").innerHTML== "ত")
+	if (document.getElementById("drag18").innerHTML== "ল"){
+	document.getElementById("drag16").innerHTML="";
+	document.getElementById("drag17").innerHTML="ত";
+	document.getElementById("drag18").innerHTML="ল";
+	document.getElementById("drag19").innerHTML="";
+	document.getElementById("drag20").innerHTML="";
+	document.getElementById("i").innerHTML="j";}
+	if (document.getElementById("drag18").innerHTML== "ত")
+	if (document.getElementById("drag19").innerHTML== "ল"){
+	document.getElementById("drag16").innerHTML="";
+	document.getElementById("drag17").innerHTML="";
+	document.getElementById("drag18").innerHTML="ত";
+	document.getElementById("drag19").innerHTML="ল";
+	document.getElementById("drag20").innerHTML="";
+	document.getElementById("i").innerHTML="j";}
+	if (document.getElementById("drag19").innerHTML== "ত")
+	if (document.getElementById("drag20").innerHTML== "ল"){
+	document.getElementById("drag16").innerHTML="";
+	document.getElementById("drag17").innerHTML="";
+	document.getElementById("drag18").innerHTML="";
+	document.getElementById("drag19").innerHTML="ত";
+	document.getElementById("drag20").innerHTML="ল";
+	document.getElementById("i").innerHTML="j";}
+	if (document.getElementById("drag21").innerHTML== "ফ")
+	if (document.getElementById("drag22").innerHTML== "ল"){
+	document.getElementById("drag21").innerHTML="ফ";
+	document.getElementById("drag22").innerHTML="ল";
+	document.getElementById("drag23").innerHTML="";
+	document.getElementById("drag24").innerHTML="";
+	document.getElementById("drag25").innerHTML="";
+	document.getElementById("j").innerHTML="j";}
+	if (document.getElementById("drag22").innerHTML== "ফ")
+	if (document.getElementById("drag23").innerHTML== "ল"){
+	document.getElementById("drag21").innerHTML="";
+	document.getElementById("drag22").innerHTML="ফ";
+	document.getElementById("drag23").innerHTML="ল";
+	document.getElementById("drag24").innerHTML="";
+	document.getElementById("drag25").innerHTML="";
+	document.getElementById("j").innerHTML="j";}
+	if (document.getElementById("drag23").innerHTML== "ফ")
+	if (document.getElementById("drag24").innerHTML== "ল"){
+	document.getElementById("drag21").innerHTML="";
+	document.getElementById("drag22").innerHTML="";
+	document.getElementById("drag23").innerHTML="ফ";
+	document.getElementById("drag24").innerHTML="ল";
+	document.getElementById("drag25").innerHTML="";
+	document.getElementById("j").innerHTML="j";}
+	if (document.getElementById("drag24").innerHTML== "ফ")
+	if (document.getElementById("drag25").innerHTML== "ল"){
+	document.getElementById("drag21").innerHTML="";
+	document.getElementById("drag22").innerHTML="";
+	document.getElementById("drag23").innerHTML="";
+	document.getElementById("drag24").innerHTML="ফ";
+	document.getElementById("drag25").innerHTML="ল";
+	document.getElementById("j").innerHTML="j";}
+	if (document.getElementById("j").innerHTML== "j")
+	if (document.getElementById("i").innerHTML== "j")
+	if (document.getElementById("h").innerHTML== "j")
+	if (document.getElementById("g").innerHTML== "j")
+	if (document.getElementById("f").innerHTML== "j"){
+	document.getElementById("gi").innerHTML="<audio id='audiowin' src='https://upload.wikimedia.org/wikipedia/commons/c/c9/Fondo_musical_sintetizado_4.ogg'></audio><article><table></table></article><div id='win'><image src='https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Gartoon_actions_button_accept.svg/128px-Gartoon_actions_button_accept.svg.png'/></br>সুন্দৰ!</br>তুমি পাৰিলা।</br></div></br><article><table></table></article></br><button id='alert' onclick='newgame();''>বেলেগ এটা খেলা!</button> <button  id='gamewin' onclick='location.reload();'>আকৌ খেলা!</button></br>";
+    winplay();}
+}
+function newgame() {
+    window.location.replace("../game.html");}
+function play() {
+        var audio = document.getElementById("audio");
+        audio.loop = true;
+        audio.play();}
+function dragplay() {
+        var audio = document.getElementById("audiodrag");
+        audio.loop = false;
+        audio.play();}
+function winplay() {
+        var audio = document.getElementById("audiowin");
+        audio.loop = false;
+        audio.play();}
+</script></body></html>

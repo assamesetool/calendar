@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html onclick="play()" ontouchstart="play()" ondblclick="play()">
+<head>
+<link rel="stylesheet" href="../stylesheets/screen.css">
+<script type="text/javascript" src="../javascripts/game.js"></script>
+</head>
+<body id="gamebg" ondragstart="dragplay()">
+<div id="gi">
+<article><table>
+<td><button id="header"><a>বৰ্ণবোৰ ক্ৰমত সজাওঁ আহা:</a></button></td>
+</table></article>
+</br></br>
+<article><table style='background-color:black;width:70%;margin-left:50px;margit-buttom:2px;border:5px solid indigo;border-radius: 25%;'>
+<td><button id='drag43' draggable='true' ondragstart='dragStarted(event)' ondragover='draggingOver(event)' ondragleave='draggingLeave(event)' ondrop='dropped(event)'>খ</button></td>
+<td><button id='drag44' draggable='true' ondragstart='dragStarted(event)' ondragover='draggingOver(event)' ondragleave='draggingLeave(event)' ondrop='dropped(event)'>ক</button></td>
+</table>
+<div id="a"></div>
+<div id="b"></div>
+<div id="c"></div></article>
+</div>
+<audio id="audio" src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Byrd%2C_Earle_of_Salisbury_Pavane_01.wav"></audio>
+<audio id="audiodrag" src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Big_bite_%28Gravity_Sound%29.wav"></audio>
+<script>
+function dropped(evt) {
+    evt.preventDefault();
+    evt.stopPropagation();
+    source.innerHTML = evt.target.innerHTML;
+    evt.target.innerHTML = evt.dataTransfer.getData("text/plain");
+	if (document.getElementById("drag43").innerHTML== "ক")
+	if (document.getElementById("drag44").innerHTML== "খ"){
+	document.getElementById("drag43").innerHTML= "<a>ক</a>";
+	document.getElementById("drag44").innerHTML= "<a>খ</a>";
+	document.getElementById("a").innerHTML="<table style='background-color:black;width:70%;margin-left:50px;margit-buttom:2px;border:5px solid indigo;border-radius: 25%;'><td><button id='drag45' draggable='true' ondragstart='dragStarted(event)' ondragover='draggingOver(event)' ondragleave='draggingLeave(event)' ondrop='dropped(event)'>খ</button></td><td><button id='drag46' draggable='true' ondragstart='dragStarted(event)' ondragover='draggingOver(event)' ondragleave='draggingLeave(event)' ondrop='dropped(event)'>গ</button></td><td><button id='drag47' draggable='true' ondragstart='dragStarted(event)' ondragover='draggingOver(event)' ondragleave='draggingLeave(event)' ondrop='dropped(event)'>ক</button></td></table>";}
+	if (document.getElementById("drag45").innerHTML== "ক")
+	if (document.getElementById("drag46").innerHTML== "খ")
+	if (document.getElementById("drag47").innerHTML== "গ"){
+	document.getElementById("drag45").innerHTML= "<a>ক</a>";
+	document.getElementById("drag46").innerHTML= "<a>খ</a>";
+	document.getElementById("drag47").innerHTML= "<a>গ</a>";
+	document.getElementById("b").innerHTML="<table style='background-color:black;width:70%;margin-left:45px;margit-buttom:2px;border:5px solid indigo;border-radius: 25%;'><td><button id='drag48' draggable='true' ondragstart='dragStarted(event)' ondragover='draggingOver(event)' ondragleave='draggingLeave(event)' ondrop='dropped(event)'>খ</button></td><td><button id='drag49' draggable='true' ondragstart='dragStarted(event)' ondragover='draggingOver(event)' ondragleave='draggingLeave(event)' ondrop='dropped(event)'>গ</button></td><td><button id='drag50' draggable='true' ondragstart='dragStarted(event)' ondragover='draggingOver(event)' ondragleave='draggingLeave(event)' ondrop='dropped(event)'>ঘ</button></td><td><button id='drag51' draggable='true' ondragstart='dragStarted(event)' ondragover='draggingOver(event)' ondragleave='draggingLeave(event)' ondrop='dropped(event)'>ক</button></td></table>";}
+	if (document.getElementById("drag48").innerHTML== "ক")
+	if (document.getElementById("drag49").innerHTML== "খ")
+	if (document.getElementById("drag50").innerHTML== "গ")
+	if (document.getElementById("drag51").innerHTML== "ঘ"){
+	document.getElementById("drag48").innerHTML= "<a>ক</a>";
+	document.getElementById("drag49").innerHTML= "<a>খ</a>";
+	document.getElementById("drag50").innerHTML= "<a>গ</a>";
+	document.getElementById("drag51").innerHTML= "<a>ঘ</a>";
+	document.getElementById("c").innerHTML="<table style='background-color:black;width:70%;margin-left:20px;margit-buttom:2px;border:5px solid indigo;border-radius: 25%;'><td><button id='drag52' draggable='true' ondragstart='dragStarted(event)' ondragover='draggingOver(event)' ondragleave='draggingLeave(event)' ondrop='dropped(event)'>গ</button></td><td><button id='drag53' draggable='true' ondragstart='dragStarted(event)' ondragover='draggingOver(event)' ondragleave='draggingLeave(event)' ondrop='dropped(event)'>ঘ</button></td><td><button id='drag54' draggable='true' ondragstart='dragStarted(event)' ondragover='draggingOver(event)' ondragleave='draggingLeave(event)' ondrop='dropped(event)'>ক</button></td><td><button id='drag55' draggable='true' ondragstart='dragStarted(event)' ondragover='draggingOver(event)' ondragleave='draggingLeave(event)' ondrop='dropped(event)'>ঙ</button></td><td><button id='drag56' draggable='true' ondragstart='dragStarted(event)' ondragover='draggingOver(event)' ondragleave='draggingLeave(event)' ondrop='dropped(event)'>খ</button></td></table>";}
+	if (document.getElementById("drag52").innerHTML== "ক")
+	if (document.getElementById("drag53").innerHTML== "খ")
+	if (document.getElementById("drag54").innerHTML== "গ")
+	if (document.getElementById("drag55").innerHTML== "ঘ")
+	if (document.getElementById("drag56").innerHTML== "ঙ"){
+	document.getElementById("gi").innerHTML="<audio id='audiowin' src='https://upload.wikimedia.org/wikipedia/commons/c/c9/Fondo_musical_sintetizado_4.ogg'></audio><article><table></table></article><div id='win'><image src='https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Gartoon_actions_button_accept.svg/128px-Gartoon_actions_button_accept.svg.png'/></br>সুন্দৰ!</br>তুমি পাৰিলা।</br></div></br><article><table></table></article></br><button id='alert' onclick='newgame();''>বেলেগ এটা খেলা!</button> <button  id='gamewin' onclick='location.reload();'>আকৌ খেলা!</button></br>";
+	winplay();}
+}
+</script></body></html>

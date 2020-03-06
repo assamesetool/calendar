@@ -306,7 +306,7 @@ div.scroll {
  animation: shake6 1s;
  animation-iteration-count: infinite;
 }
-#drag42,#drag44,#drag46,#drag48,#drag50,#drag52 {
+#drag42,#drag44,#drag46,#drag48,#drag50,#drag52,#drag54,#drag56,#drag58,#drag60 {
  width: 70px;
  height: 70px;
  color:Cyan;
@@ -317,7 +317,7 @@ div.scroll {
  animation: shake3 1s;
  animation-iteration-count: infinite;
 }
-#drag43,#drag45,#drag47,#drag49,#drag51 {
+#drag43,#drag45,#drag47,#drag49,#drag51,#drag53,#drag55,#drag57,#drag59 {
  width: 70px;
  height: 70px;
  color:Cyan;

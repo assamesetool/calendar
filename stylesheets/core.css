@@ -328,3 +328,11 @@ div.scroll {
  animation: shake6 1s;
  animation-iteration-count: infinite;
 }
+#bg {
+	background-color:black;
+	width:70%;
+	margin-left:10px;
+	margin-bottom:2px;
+	border:5px solid indigo;
+	border-radius: 25%;
+}

@@ -2,6 +2,7 @@
 <html onclick="play()" ontouchstart="play()" ondblclick="play()">
 <head>
 <link rel="stylesheet" href="../stylesheets/core.css">
+<script type="text/javascript" src="../javascripts/game.js"></script>
 </head>
 <body id="gamebg" ondragstart="dragplay()">
 <div id="gi">
@@ -58,27 +59,9 @@
 <td><button id="drag40" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped(event)">ক্ষ</button></td>
 <td><button id="drag41" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped(event)">ড়</button></td>
 </table></article></div>
-<audio id="audio" src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Byrd%2C_Earle_of_Salisbury_Pavane_01.wav"></audio>
+<audio id="audio" src="https://upload.wikimedia.org/wikipedia/commons/3/30/Alphabet_song.ogg"></audio>
 <audio id="audiodrag" src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Big_bite_%28Gravity_Sound%29.wav"></audio>
 <script>
-var source;
-function dragStarted(evt) {
-    source = evt.target;
-    evt.dataTransfer.setData("text/plain", evt.target.innerHTML);
-    evt.dataTransfer.effectAllowed = "move";
-    document.getElementById('uldPopup').style.display = "none";
-}
-
-function draggingOver(evt) {
-    evt.preventDefault();
-    evt.dataTransfer.dropEffect = "move";
-}
-
-function draggingLeave(evt) {
-    evt.preventDefault();
-    evt.dataTransfer.dropEffect = "move";
-}
-
 function dropped(evt) {
     evt.preventDefault();
     evt.stopPropagation();
@@ -128,18 +111,4 @@ function dropped(evt) {
 	document.getElementById("gi").innerHTML="<audio id='audiowin' src='https://upload.wikimedia.org/wikipedia/commons/c/c9/Fondo_musical_sintetizado_4.ogg'></audio><article><table></table></article><div id='win'><image src='https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Gartoon_actions_button_accept.svg/128px-Gartoon_actions_button_accept.svg.png'/></br>সুন্দৰ!</br>তুমি পাৰিলা।</br></div></br><article><table></table></article></br><button id='alert' onclick='newgame();''>বেলেগ এটা খেলা!</button> <button  id='gamewin' onclick='location.reload();'>আকৌ খেলা!</button></br>";
        winplay();}
 }
-function newgame() {
-    window.location.replace("../game.html");}
-function play() {
-        var audio = document.getElementById("audio");
-        audio.loop = true;
-        audio.play();}
-function dragplay() {
-        var audio = document.getElementById("audiodrag");
-        audio.loop = false;
-        audio.play();}
-function winplay() {
-        var audio = document.getElementById("audiowin");
-        audio.loop = false;
-        audio.play();}
 </script></body></html>

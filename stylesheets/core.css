@@ -184,6 +184,28 @@ div.scroll {
  animation: shake3 0.8s;
  animation-iteration-count: infinite;
 }
+#E {
+ width: 150px;
+ height: 50px;
+ padding: 5px;
+ color: orange;
+ text-shadow:black 3px 3px 3px;
+ border: 2px solid black;
+ border-radius: 45%;
+ animation: shake2 1s;
+ animation-iteration-count: infinite;
+}
+#F {
+ width: 150px;
+ height: 50px;
+ padding: 5px;
+ color: orange;
+ text-shadow:black 3px 3px 3px;
+ border: 2px solid black;
+ border-radius: 45%;
+ animation: shake1 1s;
+ animation-iteration-count: infinite;
+}
 #gamebg {
 	background-image : url("../images/9.jpg");
 	background-repeat: no-repeat;

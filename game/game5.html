@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="core.css">
-<script type="text/javascript" src="game.js"></script>
+<link rel="stylesheet" href="../stylesheets/core.css">
+<script type="text/javascript" src="../javascripts/game.js"></script>
 </head>
 <body ondragstart="dragplay()">
 <div id="gi">
@@ -49,7 +49,7 @@ function dropped1(evt) {
 	if(document.getElementById("R").innerHTML== "গ্ল")
 	if(document.getElementById("S").innerHTML== "গ্য")
 	if(document.getElementById("T").innerHTML== "গ্ব"){
-		document.getElementById("gi").innerHTML="<audio id='audiowin' src='myaudio3.ogg'></audio><article><table></table></article><div id='win'></br>সুন্দৰ,</br>তুমি পাৰিলা!</br></div></br><article><table></table></article></br><button id='alert' onclick='newgame();''>আৰু এটা খেলা</button></br>";
+		document.getElementById("gi").innerHTML="<audio id='audiowin' src='https://upload.wikimedia.org/wikipedia/commons/c/c9/Fondo_musical_sintetizado_4.ogg'></audio><article><table></table></article><div id='win'></br>সুন্দৰ,</br>তুমি পাৰিলা!</br></div></br><article><table></table></article></br><button id='alert' onclick='newgame();''>আৰু এটা খেলা</button></br>";
 		winplay();}
 }
 function newgame() {

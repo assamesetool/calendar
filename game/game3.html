@@ -1,48 +1,64 @@
 <!DOCTYPE html>
-<html onclick="play()" ontouchstart="play()" ondblclick="play()">
+<html>
 <head>
-<link rel="stylesheet" href="../stylesheets/core.css">
-<script type="text/javascript" src="../javascripts/game.js"></script>
+<link rel="stylesheet" href="core.css">
+<script type="text/javascript" src="game.js"></script>
 </head>
-<body id="gamebg" ondragstart="dragplay()">
+<body ondragstart="dragplay()">
 <div id="gi">
 <article><table>
-<td colspan='8'><button id="header"><a>বৰ্ণবোৰ ক্ৰমত সজাওঁ আহা:</a></button></td>
-</table><table>
-<td colspan='2'><button id="drag42" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped(event)">ঋ</button></td>
-<td colspan='2'><button id="drag43" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped(event)">ও</button></td>
-<td colspan='2'><button id="drag44" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped(event)">উ</button></td>
-<td colspan='2'><button id="drag45" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped(event)">ঐ</button></td>
-</table><table>
-<td colspan='2'><button id="drag46" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped(event)">ঔ</button></td>
-<td colspan='2'><button id="drag47" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped(event)">আ</button></td>
-<td colspan='2'><button id="drag48" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped(event)">ই</button></td>
-</table><table>
-<td colspan='2'><button id="drag49" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped(event)">ঊ</button></td>
-<td colspan='2'><button id="drag50" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped(event)">ঈ</button></td>
-<td colspan='2'><button id="drag51" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped(event)">অ</button></td>
-<td colspan='2'><button id="drag52" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped(event)">এ</button></td>
+<tr>
+<td colspan='5'><button id='header'><a>তলৰ যুক্তাক্ষৰবোৰৰ পৰা শুদ্ধটো আনি</br>খালি ঠাই পূৰ কৰা:</a></button></td>
+</tr>
+<tr>
+<td colspan='4'><button id="AAA"> ক + য় =</button></td>
+<td><button id="P" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped1(event);"></button></td>
+</tr>
+<tr>
+<td colspan='4'><button id="AAA"> ক + ৰ =</button></td>
+<td><button id="Q" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped1(event);"></button></td>
+</tr>
+<tr>
+<td colspan='4'><button id="AAA"> ক + ল =</button></td>
+<td><button id="R" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped1(event);"></button></td>
+</tr>
+<tr>
+<td colspan='4'><button id="AAA"> ক + ষ =</button></td>
+<td><button id="S" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped1(event);"></button></td>
+</tr>
+<tr>
+<td colspan='4'><button id="AAA"> ক + স =</button></td>
+<td><button id="T" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped1(event);"></button></td>
+</tr><tr>
+<td><button id="B" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped2(event);">ক্স</button></td>
+<td><button id="D" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped2(event);">ক্ষ</button></td>
+<td><button id="B" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped2(event);">ক্ৰ</button></td>
+<td><button id="D" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped2(event);">ক্ল</button></td>
+<td><button id="B" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondragleave="draggingLeave(event)" ondrop="dropped2(event);">ক্য</button></td>
+</tr>
 </table></article></div>
-<audio id="audio" src="https://upload.wikimedia.org/wikipedia/commons/3/30/Alphabet_song.ogg"></audio>
 <audio id="audiodrag" src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Big_bite_%28Gravity_Sound%29.wav"></audio>
 <script>
-function dropped(evt) {
+function dropped1(evt) {
     evt.preventDefault();
     evt.stopPropagation();
     source.innerHTML = evt.target.innerHTML;
     evt.target.innerHTML = evt.dataTransfer.getData("text/plain");
-	if (document.getElementById("drag42").innerHTML== "অ")
-	if (document.getElementById("drag43").innerHTML== "আ")
-	if (document.getElementById("drag44").innerHTML== "ই")
-	if (document.getElementById("drag45").innerHTML== "ঈ")
-	if (document.getElementById("drag46").innerHTML== "উ")
-	if (document.getElementById("drag47").innerHTML== "ঊ")
-	if (document.getElementById("drag48").innerHTML== "ঋ")
-	if (document.getElementById("drag49").innerHTML== "এ")
-	if (document.getElementById("drag50").innerHTML== "ঐ")
-	if (document.getElementById("drag51").innerHTML== "ও")
-	if (document.getElementById("drag52").innerHTML== "ঔ"){
-	document.getElementById("gi").innerHTML="<audio id='audiowin' src='https://upload.wikimedia.org/wikipedia/commons/c/c9/Fondo_musical_sintetizado_4.ogg'></audio><article><table></table></article><div id='win'><image src='https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Gartoon_actions_button_accept.svg/128px-Gartoon_actions_button_accept.svg.png'/></br>সুন্দৰ!</br>তুমি পাৰিলা।</br></div></br><article><table></table></article></br><button id='alert' onclick='newgame();''>বেলেগ এটা খেলা!</button> <button  id='gamewin' onclick='location.reload();'>আকৌ খেলা!</button></br>";
-       winplay();}
+	if(document.getElementById("P").innerHTML== "ক্য")
+	if(document.getElementById("Q").innerHTML== "ক্ৰ")
+	if(document.getElementById("R").innerHTML== "ক্ল")
+	if(document.getElementById("S").innerHTML== "ক্ষ")
+	if(document.getElementById("T").innerHTML== "ক্স"){
+		document.getElementById("gi").innerHTML="<audio id='audiowin' src='myaudio3.ogg'></audio><article><table></table></article><div id='win'></br>সুন্দৰ,</br>তুমি পাৰিলা!</br></div></br><article><table></table></article></br><button id='alert' onclick='newgame();''>আৰু এটা খেলা</button></br>";
+		winplay();}
 }
-</script></body></html>
+function newgame() {
+    window.location.replace("game4.html");}
+function dropped2(evt) {
+    evt.preventDefault();
+    evt.stopPropagation();
+    source.innerHTML = evt.target.innerHTML;
+    evt.target.innerHTML = evt.dataTransfer.getData("text/plain");
+}
+</script>
+</body></html>

@@ -81,6 +81,7 @@ td {
 </table>
 </article>
 <script>
+var n =  new Date();
 var b = n.getDate();
 var c = n.getMonth()+1;
  var today = c+''+c+''+b 
@@ -445,7 +446,7 @@ var c = n.getMonth()+1;
                else if (today > 225 ) {A=""} //৬ ফেব্ৰুৱাৰী//
                else if (today > 224 ) {A=""} //৫ ফেব্ৰুৱাৰী//
 	           else if (today > 223 ) {A=""} //৪ ফেব্ৰুৱাৰী//
-               else if (today > 222 ) {A=""} //৩ ফেব্ৰুৱাৰী//
+               else if (today > 222 ) {A=""} //৩ ফেব্ৰুৱাৰী/
                else if (today > 221 ) {A=""} //২ ফেব্ৰুৱাৰী//
                else if (today > 220 ) {A=""} //১ ফেব্ৰুৱাৰী//
 			   else if (today > 118 ) {A=""} //৯ জানুৱাৰী//
@@ -462,10 +463,6 @@ function checkTime(i){
            if(i<10){i="0"+i};// add Zero in front of numbers < 10
            return i;}
 document.getElementById('ToDate').innerHTML = A;
-document.getElementById("Day").innerHTML = days[a];
-document.getElementById("Date").innerHTML = dates[b];
-document.getElementById("EnMonth").innerHTML = enmonth[c];
-document.getElementById("EnDate").innerHTML = endates[b];
 </script>
 </body> 
 </html>

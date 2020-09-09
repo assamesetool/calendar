@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html>
+<style>
+html, body {
+	margin-top: 0;
+        margin-left: 10;
+	padding: 0;
+}
+body {
+	background-color:transparent;
+	width:300px;
+	text-align:center
+}
+article {
+	word-wrap: break-word;
+	padding: 2px;
+	overflow: hidden;
+	margin-bottom: 5px;
+	background-color:Lavender;
+	 -moz-box-shadow: 0px 5px 12px rgba(000,000,000,0.5);
+	 -webkit-box-shadow:0px 5px 12px rgba(000,000,000,0.5);
+	 box-shadow:0px 5px 12px rgba(000,000,000,0.5);
+}
+table {
+   text-align:center;
+   width:99%;
+   border-spacing:0;
+   border:2px solid green;
+   margin: 0;
+}
+td {
+   text-align:center;
+}
+#aa {
+     color:Maroon;
+	 background-color:Cyan;
+	 text-shadow:MediumSeaGreen 1px 1px 1px;
+	 font-size:17px;
+	 width:280px;
+	height:140px;
+	margin: 0;
+	padding: 0;
+}
+#teal {
+     background-color:green;
+}
+#border {
+     border-right:2px solid teal;
+     border-top:2px solid teal;
+     border-left:2px solid teal;
+      border-bottom:2px solid teal;
+}
+#ToDate {
+     color:Maroon;
+}
+#Red {
+     color:Red;
+	 font-size:19px;
+	 background-color:Cyan;
+	 width:280px;
+	 text-shadow:MediumSeaGreen 1px 1px 1px;
+	 margin: 0;
+	 padding: 0;
+}
+#Date {
+     color:Red;
+	 font-size:19px;
+	 background-color:Cyan;
+	 width:280px;
+	 text-shadow:MediumSeaGreen 1px 1px 1px;
+	 margin: 0;
+	 padding: 0;
+}
+</style>
+<body><article><table><tr id='teal'>
+<td colspan="7" id='bordertop'>
+<button id="aa"> <a id="ToDate"></a>
+</button>
+</td>
+</tr>
+</table>
+</article>
+<script>
+var b = n.getDate();
+var c = n.getMonth()+1;
+ var today = c+''+c+''+b 
+                        if (today > 121231 ) {A=""}
+		   else if (today > 121230 ) {A=""} //৩১ ডিচেম্বৰ//
+	       else if (today > 121229 ) {A=""} //৩০ ডিচেম্বৰ//
+           else if (today > 121228 ) {A=""} //২৯ ডিচেম্বৰ//
+           else if (today > 121227 ) {A=""} //২৮ ডিচেম্বৰ//
+           else if (today > 121226 ) {A=""} //২৭ ডিচেম্বৰ//
+	       else if (today > 121225 ) {A=""} //২৬ ডিচেম্বৰ//
+	       else if (today > 121224 ) {A="খ্ৰীষ্টমাচ"} //২৫ ডিচেম্বৰ//
+	       else if (today > 121223 ) {A=""} //২৪ ডিচেম্বৰ//
+           else if (today > 121222 ) {A=""} //২৩ ডিচেম্বৰ//
+           else if (today > 121221 ) {A=""} //২২ ডিচেম্বৰ//
+           else if (today > 121220 ) {A=""} //২১ ডিচেম্বৰ//
+	       else if (today > 121219 ) {A=""} //২০ ডিচেম্বৰ//
+	       else if (today > 121218 ) {A=""} //১৯ ডিচেম্বৰ//
+           else if (today > 121217 ) {A=""} //১৮ ডিচেম্বৰ//
+	       else if (today > 121216 ) {A=""} //১৭ ডিচেম্বৰ//
+	       else if (today > 121215 ) {A=""} //১৬ ডিচেম্বৰ//
+	       else if (today > 121214 ) {A=""} //১৫ ডিচেম্বৰ//
+	       else if (today > 121213 ) {A=""} //১৪ ডিচেম্বৰ//
+           else if (today > 121212 ) {A=""} //১৩ ডিচেম্বৰ//
+           else if (today > 121211 ) {A=""} //১২ ডিচেম্বৰ//
+           else if (today > 121210 ) {A=""} //১১ ডিচেম্বৰ//
+           else if (today > 121209 ) {A=""} //১০ ডিচেম্বৰ//
+	       else if (today > 111129 ) {A="গুৰু নানক জয়ন্তী"} //৩০ নবেম্বৰ//
+           else if (today > 111128 ) {A=""} //২৯ নবেম্বৰ//
+           else if (today > 111127 ) {A=""} //২৮ নবেম্বৰ//
+           else if (today > 111126 ) {A=""} //২৭ নবেম্বৰ//
+	       else if (today > 111125 ) {A=""} //২৬ নবেম্বৰ//
+	       else if (today > 111124 ) {A=""} //২৫ নবেম্বৰ//
+	       else if (today > 111123 ) {A="লাচিত দিৱস"} //২৪ নবেম্বৰ//
+           else if (today > 111122 ) {A=""} //২৩ নবেম্বৰ//
+           else if (today > 111121 ) {A=""} //২২ নবেম্বৰ//
+           else if (today > 111120 ) {A=""} //২১ নবেম্বৰ//
+	       else if (today > 111119 ) {A="ছট্ পূজা"} //২০ নবেম্বৰ//
+	       else if (today > 111118 ) {A=""} //১৯ নবেম্বৰ//
+           else if (today > 111117 ) {A=""} //১৮ নবেম্বৰ//
+	       else if (today > 111116 ) {A=""} //১৭ নবেম্বৰ//
+	       else if (today > 111115 ) {A=""} //১৬ নবেম্বৰ//
+	       else if (today > 111114 ) {A=""} //১৫ নবেম্বৰ//
+	       else if (today > 111113) {A="দীপাৱলী<br>শিশু দিৱস"} //১৪ নবেম্বৰ//
+           else if (today > 111112 ) {A=""} //১৩ নবেম্বৰ//
+           else if (today > 111111 ) {A=""} //১২ নবেম্বৰ//
+           else if (today > 111110 ) {A=""} //১১ নবেম্বৰ//
+           else if (today > 111109 ) {A=""} //১০ নবেম্বৰ//
+           else if (today > 101030 ) {A=""} //৩১ অক্টোবৰ//
+	       else if (today > 101029 ) {A="লক্ষ্মী পূজা"} //৩০ অক্টোবৰ//
+           else if (today > 101028 ) {A=""} //২৯ অক্টোবৰ//
+           else if (today > 101027 ) {A=""} //২৮ অক্টোবৰ//
+           else if (today > 101026 ) {A=""} //২৭ অক্টোবৰ//
+	       else if (today > 101025 ) {A="বিজয়া দশমী"} //২৬ অক্টোবৰ//
+	       else if (today > 101024 ) {A="দুৰ্গা নৱমী"} //২৫ অক্টোবৰ//
+	       else if (today > 101023 ) {A="দুৰ্গা অষ্টমী"} //২৪ অক্টোবৰ//
+           else if (today > 101022 ) {A="দুৰ্গা সপ্তমী"} //২৩ অক্টোবৰ//
+           else if (today > 101021 ) {A=""} //২২ অক্টোবৰ//
+           else if (today > 101020 ) {A=""} //২১ অক্টোবৰ//
+	       else if (today > 101019 ) {A=""} //২০ অক্টোবৰ//
+	       else if (today > 101018 ) {A=""} //১৯ অক্টোবৰ//
+           else if (today > 101017 ) {A=""} //১৮ অক্টোবৰ//
+	       else if (today > 101016 ) {A="কাতি বিহু"} //১৭ অক্টোবৰ//
+	       else if (today > 101015 ) {A=""} //১৬ অক্টোবৰ//
+	       else if (today > 101014 ) {A=""} //১৫ অক্টোবৰ//
+	       else if (today > 101013 ) {A=""} //১৪ অক্টোবৰ//
+           else if (today > 101012 ) {A=""} //১৩ অক্টোবৰ//
+           else if (today > 101011 ) {A=""} //১২ অক্টোবৰ//
+           else if (today > 101010 ) {A=""} //১১ অক্টোবৰ//
+           else if (today > 101009 ) {A=""} //১০ অক্টোবৰ//
+		   
+		   else if (today > 12129 ) {A=""} //১০ ডিচেম্বৰ//
+           else if (today > 12128 ) {A=""} //৯ ডিচেম্বৰ//
+	       else if (today > 12127 ) {A=""} //৮ ডিচেম্বৰ//
+	       else if (today > 12126 ) {A=""} //৭ ডিচেম্বৰ//
+	       else if (today > 12125 ) {A=""} //৬ ডিচেম্বৰ//
+	       else if (today > 12124 ) {A=""} //৫ ডিচেম্বৰ//
+           else if (today > 12123 ) {A=""} //৪ ডিচেম্বৰ//
+           else if (today > 12122 ) {A=""} //৩ ডিচেম্বৰ//
+           else if (today > 12121 ) {A="চ্যুকাফা দিৱস"} //২ ডিচেম্বৰ//
+           else if (today > 12120 ) {A=""} //১ ডিচেম্বৰ//
+		   else if (today > 11119 ) {A=""} //১০ নবেম্বৰ//
+           else if (today > 11118 ) {A=""} //৯ নবেম্বৰ//
+	       else if (today > 11117 ) {A=""} //৮ নবেম্বৰ//
+	       else if (today > 11116 ) {A=""} //৭ নবেম্বৰ//
+	       else if (today > 11115 ) {A=""} //৬ নবেম্বৰ//
+	       else if (today > 11114 ) {A=""} //৫ নবেম্বৰ//
+           else if (today > 11113 ) {A=""} //৪ নবেম্বৰ//
+           else if (today > 11112 ) {A=""} //৩ নবেম্বৰ//
+           else if (today > 11111 ) {A=""} //২ নবেম্বৰ//
+           else if (today > 11110 ) {A=""} //১ নবেম্বৰ//
+		   else if (today > 10109 ) {A=""} //১০ অক্টোবৰ//
+           else if (today > 10108 ) {A=""} //৯ অক্টোবৰ//
+	       else if (today > 10107 ) {A=""} //৮ অক্টোবৰ//
+	       else if (today > 10106 ) {A=""} //৭ অক্টোবৰ//
+	       else if (today > 10105 ) {A=""} //৬ অক্টোবৰ//
+	       else if (today > 10104 ) {A=""} //৫ অক্টোবৰ//
+           else if (today > 10103 ) {A=""} //৪ অক্টোবৰ//
+           else if (today > 10102 ) {A=""} //৩ অক্টোবৰ//
+           else if (today > 10101 ) {A="গান্ধী জয়ন্তী"} //২ অক্টোবৰ//
+           else if (today > 10100 ) {A=""} //১ অক্টোবৰ//
+		   
+           else if (today > 9929 ) {A=""} //৩০ ছেপ্টেম্বৰ//
+	       else if (today > 9928 ) {A=""} //২৯ ছেপ্টেম্বৰ//
+           else if (today > 9927 ) {A=""} //২৮ ছেপ্টেম্বৰ//
+           else if (today > 9926 ) {A=""} //২৭ ছেপ্টেম্বৰ//
+           else if (today > 9925 ) {A="শংকৰদেৱৰ জন্মতিথি"} //২৬ ছেপ্টেম্বৰ//
+           else if (today > 9924 ) {A=""} //২৫ ছেপ্টেম্বৰ//
+           else if (today > 9923 ) {A=""} //২৪ ছেপ্টেম্বৰ//
+           else if (today > 9922 ) {A=""} //২৩ ছেপ্টেম্বৰ//
+           else if (today > 9921 ) {A=""} //২২ ছেপ্টেম্বৰ//
+           else if (today > 9920 ) {A=""} //২১ ছেপ্টেম্বৰ//
+           else if (today > 9919 ) {A=""} //২০ ছেপ্টেম্বৰ//
+           else if (today > 9918 ) {A=""} //১৯ ছেপ্টেম্বৰ//
+           else if (today > 9917 ) {A=""} //১৮ ছেপ্টেম্বৰ//
+           else if (today > 9916 ) {A="বিশ্বকৰ্মা পূজা"} //১৭ ছেপ্টেম্বৰ//
+           else if (today > 9915 ) {A=""} //১৬ ছেপ্টেম্বৰ//
+           else if (today > 9914 ) {A=""} //১৫ ছেপ্টেম্বৰ//
+           else if (today > 9913 ) {A=""} //১৪ ছেপ্টেম্বৰ//
+           else if (today > 9912 ) {A=""} //১৩ ছেপ্টেম্বৰ//
+           else if (today > 9911 ) {A=""} //১২ ছেপ্টেম্বৰ//
+           else if (today > 9910 ) {A=""} //১১ ছেপ্টেম্বৰ//
+           else if (today > 9909 ) {A=""} //১০ ছেপ্টেম্বৰ//
+           else if (today > 8830 ) {A=""} //৩১ আগষ্ট//
+	       else if (today > 8829 ) {A=""} //৩০ আগষ্ট//
+           else if (today > 8828 ) {A=""} //২৯ আগষ্ট//
+           else if (today > 8827 ) {A=""} //২৮ আগষ্ট//
+           else if (today > 8826 ) {A=""} //২৭ আগষ্ট//
+	       else if (today > 8825 ) {A=""} //২৬ আগষ্ট//
+	       else if (today > 8824 ) {A=""} //২৫ আগষ্ট//
+	       else if (today > 8823 ) {A=""} //২৪ আগষ্ট//
+           else if (today > 8822 ) {A=""} //২৩ আগষ্ট//
+           else if (today > 8821 ) {A=""} //২২ আগষ্ট//
+           else if (today > 8820 ) {A=""} //২১ আগষ্ট//
+	       else if (today > 8819 ) {A=""} //২০ আগষ্ট//
+	       else if (today > 8818 ) {A=""} //১৯ আগষ্ট//
+           else if (today > 8817 ) {A=""} //১৮ আগষ্ট//
+	       else if (today > 8816 ) {A=""} //১৭ আগষ্ট//
+	       else if (today > 8815 ) {A=""} //১৬ আগষ্ট//
+	       else if (today > 8814 ) {A=""} //১৫ আগষ্ট//
+	       else if (today > 8813 ) {A=""} //১৪ আগষ্ট//
+           else if (today > 8812 ) {A=""} //১৩ আগষ্ট//
+           else if (today > 8811 ) {A=""} //১২ আগষ্ট//
+           else if (today > 8810 ) {A=""} //১১ আগষ্ট//
+           else if (today > 8809 ) {A=""} //১০ আগষ্ট//
+		   else if (today > 7730 ) {A=""} //৩১ জুলাই//
+	       else if (today > 7729 ) {A=""} //৩০ জুলাই//
+           else if (today > 7728 ) {A=""} //২৯ জুলাই//
+           else if (today > 7727 ) {A=""} //২৮ জুলাই//
+           else if (today > 7726 ) {A=""} //২৭ জুলাই//
+	       else if (today > 7725 ) {A=""} //২৬ জুলাই//
+	       else if (today > 7724 ) {A=""} //২৫ জুলাই//
+	       else if (today > 7723 ) {A=""} //২৪ জুলাই//
+           else if (today > 7722 ) {A=""} //২৩ জুলাই//
+           else if (today > 7721 ) {A=""} //২২ জুলাই//
+           else if (today > 7720 ) {A=""} //২১ জুলাই//
+	       else if (today > 7719 ) {A=""} //২০ জুলাই//
+	       else if (today > 7718 ) {A=""} //১৯ জুলাই//
+           else if (today > 7717 ) {A=""} //১৮ জুলাই//
+	       else if (today > 7716 ) {A=""} //১৭ জুলাই//
+	       else if (today > 7715 ) {A=""} //১৬ জুলাই//
+	       else if (today > 7714 ) {A=""} //১৫ জুলাই//
+	       else if (today > 7713 ) {A=""} //১৪ জুলাই//
+           else if (today > 7712 ) {A=""} //১৩ জুলাই//
+           else if (today > 7711 ) {A=""} //১২ জুলাই//
+           else if (today > 7710 ) {A=""} //১১ জুলাই//
+           else if (today > 7709 ) {A=""} //১০ জুলাই//
+	       else if (today > 6629 ) {A=""} //৩০ জুন//
+           else if (today > 6628 ) {A=""} //২৯ জুন//
+           else if (today > 6627 ) {A=""} //২৮ জুন//
+           else if (today > 6626 ) {A=""} //২৭ জুন//
+	       else if (today > 6625 ) {A=""} //২৬ জুন//
+	       else if (today > 6624 ) {A=""} //২৫ জুন//
+	       else if (today > 6623 ) {A=""} //২৪ জুন//
+           else if (today > 6622 ) {A=""} //২৩ জুন//
+           else if (today > 6621 ) {A=""} //২২ জুন//
+           else if (today > 6620 ) {A=""} //২১ জুন//
+	       else if (today > 6619 ) {A=""} //২০ জুন//
+	       else if (today > 6618 ) {A=""} //১৯ জুন//
+           else if (today > 6617 ) {A=""} //১৮ জুন//
+	       else if (today > 6616 ) {A=""} //১৭ জুন//
+	       else if (today > 6615 ) {A=""} //১৬ জুন//
+	       else if (today > 6614 ) {A=""} //১৫ জুন//
+	       else if (today > 6613 ) {A=""} //১৪ জুন//
+           else if (today > 6612 ) {A=""} //১৩ জুন//
+           else if (today > 6611 ) {A=""} //১২ জুন//
+           else if (today > 6610 ) {A=""} //১১ জুন//
+           else if (today > 6609 ) {A=""} //১০ জুন//
+		   else if (today > 5530 ) {A=""} //৩১ মে//
+	       else if (today > 5529 ) {A=""} //৩০ মে//
+           else if (today > 5528 ) {A=""} //২৯ মে//
+           else if (today > 5527 ) {A=""} //২৮ মে//
+           else if (today > 5526 ) {A=""} //২৭ মে//
+	       else if (today > 5525 ) {A=""} //২৬ মে//
+	       else if (today > 5524 ) {A=""} //২৫ মে//
+	       else if (today > 5523 ) {A=""} //২৪ মে//
+           else if (today > 5522 ) {A=""} //২৩ মে//
+           else if (today > 5521 ) {A=""} //২২ মে//
+           else if (today > 5520 ) {A=""} //২১ মে//
+	       else if (today > 5519 ) {A=""} //২০ মে//
+	       else if (today > 5518 ) {A=""} //১৯ মে//
+           else if (today > 5517 ) {A=""} //১৮ মে//
+	       else if (today > 5516 ) {A=""} //১৭ মে//
+	       else if (today > 5515 ) {A=""} //১৬ মে//
+	       else if (today > 5514 ) {A=""} //১৫ মে//
+	       else if (today > 5513 ) {A=""} //১৪ মে//
+           else if (today > 5512 ) {A=""} //১৩ মে//
+           else if (today > 5511 ) {A=""} //১২ মে//
+           else if (today > 5510 ) {A=""} //১১ মে//
+           else if (today > 5509 ) {A=""} //১০ মে//
+	       else if (today > 4429 ) {A=""} //৩০ এপ্ৰিল//
+           else if (today > 4428 ) {A=""} //২৯ এপ্ৰিল//
+           else if (today > 4427 ) {A=""} //২৮ এপ্ৰিল//
+           else if (today > 4426 ) {A=""} //২৭ এপ্ৰিল//
+	       else if (today > 4425 ) {A=""} //২৬ এপ্ৰিল//
+	       else if (today > 4424 ) {A=""} //২৫ এপ্ৰিল//
+	       else if (today > 4423 ) {A=""} //২৪ এপ্ৰিল//
+           else if (today > 4422 ) {A=""} //২৩ এপ্ৰিল//
+           else if (today > 4421 ) {A=""} //২২ এপ্ৰিল//
+           else if (today > 4420 ) {A=""} //২১ এপ্ৰিল//
+	       else if (today > 4419 ) {A=""} //২০ এপ্ৰিল//
+	       else if (today > 4418 ) {A=""} //১৯ এপ্ৰিল//
+           else if (today > 4417 ) {A=""} //১৮ এপ্ৰিল//
+	       else if (today > 4416 ) {A=""} //১৭ এপ্ৰিল//
+	       else if (today > 4415 ) {A=""} //১৬ এপ্ৰিল//
+	       else if (today > 4414 ) {A=""} //১৫ এপ্ৰিল//
+	       else if (today > 4413 ) {A=""} //১৪ এপ্ৰিল//
+           else if (today > 4412 ) {A=""} //১৩ এপ্ৰিল//
+           else if (today > 4411 ) {A=""} //১২ এপ্ৰিল//
+           else if (today > 4410 ) {A=""} //১১ এপ্ৰিল//
+           else if (today > 4409 ) {A=""} //১০ এপ্ৰিল//
+		   else if (today > 3330 ) {A=""} //৩১ মাৰ্চ//
+	       else if (today > 3329 ) {A=""} //৩০ মাৰ্চ//
+           else if (today > 3328 ) {A=""} //২৯ মাৰ্চ//
+           else if (today > 3327 ) {A=""} //২৮ মাৰ্চ//
+           else if (today > 3326 ) {A=""} //২৭ মাৰ্চ//
+	       else if (today > 3325 ) {A=""} //২৬ মাৰ্চ//
+	       else if (today > 3324 ) {A=""} //২৫ মাৰ্চ//
+	       else if (today > 3323 ) {A=""} //২৪ মাৰ্চ//
+           else if (today > 3322 ) {A=""} //২৩ মাৰ্চ//
+           else if (today > 3321 ) {A=""} //২২ মাৰ্চ//
+           else if (today > 3320 ) {A=""} //২১ মাৰ্চ//
+	       else if (today > 3319 ) {A=""} //২০ মাৰ্চ//
+	       else if (today > 3318 ) {A=""} //১৯ মাৰ্চ//
+           else if (today > 3317 ) {A=""} //১৮ মাৰ্চ//
+	       else if (today > 3316 ) {A=""} //১৭ মাৰ্চ//
+	       else if (today > 3315 ) {A=""} //১৬ মাৰ্চ//
+	       else if (today > 3314 ) {A=""} //১৫ মাৰ্চ//
+	       else if (today > 3313 ) {A=""} //১৪ মাৰ্চ//
+           else if (today > 3312 ) {A=""} //১৩ মাৰ্চ//
+           else if (today > 3311 ) {A=""} //১২ মাৰ্চ//
+           else if (today > 3310 ) {A=""} //১১ মাৰ্চ//
+           else if (today > 3309 ) {A=""} //১০ মাৰ্চ//
+           else if (today > 2228 ) {A=""} //২৯ ফেব্ৰুৱাৰী//
+           else if (today > 2227 ) {A=""} //২৮ ফেব্ৰুৱাৰী//
+           else if (today > 2226 ) {A=""} //২৭ ফেব্ৰুৱাৰী//
+	       else if (today > 2225 ) {A=""} //২৬ ফেব্ৰুৱাৰী//
+	       else if (today > 2224 ) {A=""} //২৫ ফেব্ৰুৱাৰী//
+	       else if (today > 2223 ) {A=""} //২৪ ফেব্ৰুৱাৰী//
+           else if (today > 2222 ) {A=""} //২৩ ফেব্ৰুৱাৰী//
+           else if (today > 2221 ) {A=""} //২২ ফেব্ৰুৱাৰী//
+           else if (today > 2220 ) {A=""} //২১ ফেব্ৰুৱাৰী//
+	       else if (today > 2219 ) {A=""} //২০ ফেব্ৰুৱাৰী//
+	       else if (today > 2218 ) {A=""} //১৯ ফেব্ৰুৱাৰী//
+           else if (today > 2217 ) {A=""} //১৮ ফেব্ৰুৱাৰী//
+	       else if (today > 2216 ) {A=""} //১৭ ফেব্ৰুৱাৰী//
+	       else if (today > 2215 ) {A=""} //১৬ ফেব্ৰুৱাৰী//
+	       else if (today > 2214 ) {A=""} //১৫ ফেব্ৰুৱাৰী//
+	       else if (today > 2213 ) {A=""} //১৪ ফেব্ৰুৱাৰী//
+           else if (today > 2212 ) {A=""} //১৩ ফেব্ৰুৱাৰী//
+           else if (today > 2211 ) {A=""} //১২ ফেব্ৰুৱাৰী//
+           else if (today > 2210 ) {A=""} //১১ ফেব্ৰুৱাৰী//
+           else if (today > 2209 ) {A=""} //১০ ফেব্ৰুৱাৰী//
+		   else if (today > 1130 ) {A=""} //৩১ জানুৱাৰী//
+	       else if (today > 1129 ) {A=""} //৩০ জানুৱাৰী//
+           else if (today > 1128 ) {A=""} //২৯ জানুৱাৰী//
+           else if (today > 1127 ) {A=""} //২৮ জানুৱাৰী//
+           else if (today > 1126 ) {A=""} //২৭ জানুৱাৰী//
+	       else if (today > 1125 ) {A=""} //২৬ জানুৱাৰী//
+	       else if (today > 1124 ) {A=""} //২৫ জানুৱাৰী//
+	       else if (today > 1123 ) {A=""} //২৪ জানুৱাৰী//
+           else if (today > 1122 ) {A=""} //২৩ জানুৱাৰী//
+           else if (today > 1121 ) {A=""} //২২ জানুৱাৰী//
+           else if (today > 1120 ) {A=""} //২১ জানুৱাৰী//
+	       else if (today > 1119 ) {A=""} //২০ জানুৱাৰী//
+	       else if (today > 1118 ) {A=""} //১৯ জানুৱাৰী//
+           else if (today > 1117 ) {A=""} //১৮ জানুৱাৰী//
+	       else if (today > 1116 ) {A=""} //১৭ জানুৱাৰী//
+	       else if (today > 1115 ) {A=""} //১৬ জানুৱাৰী//
+	       else if (today > 1114 ) {A=""} //১৫ জানুৱাৰী//
+	       else if (today > 1113 ) {A=""} //১৪ জানুৱাৰী//
+           else if (today > 1112 ) {A=""} //১৩ জানুৱাৰী//
+           else if (today > 1111 ) {A=""} //১২ জানুৱাৰী//
+           else if (today > 1110 ) {A=""} //১১ জানুৱাৰী//
+           else if (today > 1109 ) {A=""} //১০ জানুৱাৰী//
+	           
+               else if (today > 998 ) {A="জন্মাষ্টমী"} //৯ ছেপ্টেম্বৰ//
+               else if (today > 997 ) {A=""} //৮ ছেপ্টেম্বৰ//
+               else if (today > 996 ) {A=""} //৭ ছেপ্টেম্বৰ//
+               else if (today > 995 ) {A=""} //৬ ছেপ্টেম্বৰ//
+               else if (today > 994 ) {A=""} //৫ ছেপ্টেম্বৰ//
+	           else if (today > 993 ) {A=""} //৪ ছেপ্টেম্বৰ//
+	           else if (today > 992 ) {A=""} //৩ ছেপ্টেম্বৰ//
+	           else if (today > 991 ) {A=""} //২ ছেপ্টেম্বৰ//
+	           else if (today > 990 ) {A=""} //১ ছেপ্টেম্বৰ//
+		       else if (today > 888 ) {A=""} //৯ আগষ্ট//
+               else if (today > 887 ) {A=""} //৮ আগষ্ট//
+               else if (today > 886 ) {A=""} //৭ আগষ্ট//
+               else if (today > 885 ) {A=""} //৬ আগষ্ট//
+               else if (today > 884 ) {A=""} //৫ আগষ্ট//
+	           else if (today > 883 ) {A=""} //৪ আগষ্ট//
+               else if (today > 882 ) {A=""} //৩ আগষ্ট//
+               else if (today > 881 ) {A=""} //২ আগষ্ট//
+               else if (today > 880 ) {A=""} //১ আগষ্ট//
+			   else if (today > 778 ) {A=""} //৯ জুলাই//
+               else if (today > 777 ) {A=""} //৮ জুলাই//
+               else if (today > 776 ) {A=""} //৭ জুলাই//
+               else if (today > 775 ) {A=""} //৬ জুলাই//
+               else if (today > 774 ) {A=""} //৫ জুলাই//
+	           else if (today > 773 ) {A=""} //৪ জুলাই//
+	           else if (today > 772 ) {A=""} //৩ জুলাই//
+	           else if (today > 771 ) {A=""} //২ জুলাই//
+	           else if (today > 770 ) {A=""} //১ জুলাই//
+		       else if (today > 668 ) {A=""} //৯ জুন//
+               else if (today > 667 ) {A=""} //৮ জুন//
+               else if (today > 666 ) {A=""} //৭ জুন//
+               else if (today > 665 ) {A=""} //৬ জুন//
+               else if (today > 664 ) {A=""} //৫ জুন//
+	           else if (today > 663 ) {A=""} //৪ জুন//
+               else if (today > 662 ) {A=""} //৩ জুন//
+               else if (today > 661 ) {A=""} //২ জুন//
+               else if (today > 660 ) {A=""} //১ জুন//
+			   else if (today > 558 ) {A=""} //৯ মে//
+               else if (today > 557 ) {A=""} //৮ মে//
+               else if (today > 556 ) {A=""} //৭ মে//
+               else if (today > 555 ) {A=""} //৬ মে//
+               else if (today > 554 ) {A=""} //৫ মে//
+	           else if (today > 553 ) {A=""} //৪ মে//
+	           else if (today > 552 ) {A=""} //৩ মে//
+	           else if (today > 551 ) {A=""} //২ মে//
+	           else if (today > 550 ) {A=""} //১ মে//
+		       else if (today > 448 ) {A=""} //৯ এপ্ৰিল//
+               else if (today > 447 ) {A=""} //৮ এপ্ৰিল//
+               else if (today > 446 ) {A=""} //৭ এপ্ৰিল//
+               else if (today > 445 ) {A=""} //৬ এপ্ৰিল//
+               else if (today > 444 ) {A=""} //৫ এপ্ৰিল//
+	           else if (today > 443 ) {A=""} //৪ এপ্ৰিল//
+               else if (today > 442 ) {A=""} //৩ এপ্ৰিল//
+               else if (today > 441 ) {A=""} //২ এপ্ৰিল//
+               else if (today > 440 ) {A=""} //১ এপ্ৰিল//
+			   else if (today > 338 ) {A=""} //৯ মাৰ্চ//
+               else if (today > 337 ) {A=""} //৮ মাৰ্চ//
+               else if (today > 336 ) {A=""} //৭ মাৰ্চ//
+               else if (today > 335 ) {A=""} //৬ মাৰ্চ//
+               else if (today > 334 ) {A=""} //৫ মাৰ্চ//
+	           else if (today > 333 ) {A=""} //৪ মাৰ্চ//
+	           else if (today > 332 ) {A=""} //৩ মাৰ্চ//
+	           else if (today > 331 ) {A=""} //২ মাৰ্চ//
+	           else if (today > 330 ) {A=""} //১ মাৰ্চ//
+		       else if (today > 228 ) {A=""} //৯ ফেব্ৰুৱাৰী//
+               else if (today > 227 ) {A=""} //৮ ফেব্ৰুৱাৰী//
+               else if (today > 226 ) {A=""} //৭ ফেব্ৰুৱাৰী//
+               else if (today > 225 ) {A=""} //৬ ফেব্ৰুৱাৰী//
+               else if (today > 224 ) {A=""} //৫ ফেব্ৰুৱাৰী//
+	           else if (today > 223 ) {A=""} //৪ ফেব্ৰুৱাৰী//
+               else if (today > 222 ) {A=""} //৩ ফেব্ৰুৱাৰী//
+               else if (today > 221 ) {A=""} //২ ফেব্ৰুৱাৰী//
+               else if (today > 220 ) {A=""} //১ ফেব্ৰুৱাৰী//
+			   else if (today > 118 ) {A=""} //৯ জানুৱাৰী//
+               else if (today > 117 ) {A=""} //৮ জানুৱাৰী//
+               else if (today > 116 ) {A=""} //৭ জানুৱাৰী//
+               else if (today > 115 ) {A=""} //৬ জানুৱাৰী//
+               else if (today > 114 ) {A=""} //৫ জানুৱাৰী//
+	           else if (today > 113 ) {A=""} //৪ জানুৱাৰী//
+	           else if (today > 112 ) {A=""} //৩ জানুৱাৰী//
+	           else if (today > 111 ) {A=""} //২ জানুৱাৰী//
+	           else if (today > 110 ) {A=""} //১ জানুৱাৰী//
+	else {A=""}
+function checkTime(i){
+           if(i<10){i="0"+i};// add Zero in front of numbers < 10
+           return i;}
+document.getElementById('ToDate').innerHTML = A;
+document.getElementById("Day").innerHTML = days[a];
+document.getElementById("Date").innerHTML = dates[b];
+document.getElementById("EnMonth").innerHTML = enmonth[c];
+document.getElementById("EnDate").innerHTML = endates[b];
+</script>
+</body> 
+</html>

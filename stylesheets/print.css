@@ -72,3 +72,13 @@ iframe {
 	top:16px;
 	right:-0px;
 }
+#footer {
+	background-color:green;
+	font-size:20px;
+	text-align:center;
+	color:orange;
+	text-shadow:black 1px 1px 1px;
+	width:99%;
+	margin: 0;
+	padding: 0;
+	}

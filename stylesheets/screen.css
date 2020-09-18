@@ -101,7 +101,8 @@ div.scroll {
 	border-right:2px solid teal;
 }
 
-#aa, #ab {
+#aa, #ab, #ac, #ad, #ae, #af, #ag, #ah, #ai, #aj, #ak, #al, #am, #an, #ao, #ap, #aq, #ar, #as, #at, #au, #av, #aw, #ax, #ay, #az,
+#ba, #bb, #bc, #bd, #be, #bf, #bg, #bh, #bi {
 	margin: 0;
 	padding: 0;
 	background-color:transparent;
@@ -124,8 +125,15 @@ div.scroll {
 	height:20px;
 	font-size:20px;
 }
-#aa {
+#aa, #ah, #ao, #av, #bc, #aba, #aca, #ada, #aea, #afa, #aga, #aia, #aja, #aka, #ala, #ama, #ana, #apa, #aqa, #ara, #asa, #ata, #aua, #awa, #axa, #aya, #aza,
+#baa, #bba, #bda, #bea, #bfa, #bga, #bha, #bia {
    color:red;
+   margin: 0;
+	padding: 0;
+	background-color:transparent;
+	width:45px;
+	height:62px;
+	font-size:20px;
 }
 #amba {
      background-image : url("https://upload.wikimedia.org/wikipedia/commons/9/97/Amabsya.png");

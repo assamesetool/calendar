@@ -6,7 +6,7 @@ html, body {
 
 body {
 	background-color:transparent;
-	width:90%;
+	width:100%;
 	text-align:center
 }
 article {
@@ -21,7 +21,7 @@ article {
 }
 table {
    text-align:center;
-   width:97%;
+   width:350px;
    border-spacing:0;
    border:2px solid green;
    margin: 0;

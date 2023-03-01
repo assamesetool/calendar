@@ -5,7 +5,7 @@ html, body {
 }
 body {
 	background-color:transparent;
-	width:300px;
+	width:350px;
 	text-align:center;
 }
 article {
@@ -43,7 +43,7 @@ td {
      background-color:none;
      text-align:left;
      font-size:17px;
-     width:295px;
+     width:320px;
      margin: 0;
      padding: 0;
 }

@@ -5,7 +5,7 @@ html, body {
 }
 body {
 	background-color:transparent;
-	width:350px;
+	width:300px;
 	text-align:center;
 }
 article {
@@ -43,8 +43,8 @@ td {
      background-color:none;
      text-align:left;
      font-size:17px;
-     width:320px;
-     margin: 0;
+     width:295px;
+     margin-left:5px;
      padding: 0;
 }
 #ac {

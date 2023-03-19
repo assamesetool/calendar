@@ -258,6 +258,20 @@ div.scroll {
 #g {
 	background-color:green;
 }
+#fontG {
+        color:green;
+        margin: 0;
+	padding: 0;
+	background-color:transparent;
+	font-size:15px;
+}
+#fontR {
+        color:red;
+        margin: 0;
+	padding: 0;
+	background-color:transparent;
+	font-size:15px;
+}
 #header {
 	background-color:transparent;
 	font-size:20px;

@@ -78,7 +78,7 @@ td {
 #Sig {
         color:Maroon;
 }
-#Red {
+#Red, #today {
          color:Red;
 	 font-size:19px;
 	 background-color:Cyan;

@@ -1,0 +1,24 @@
+<html>
+  <body>
+<div>
+<a style="width:60px;height:60px;">তলৰ ক’ টোত চুই দিয়া</a>
+</div>
+<div id="id1">
+<button style="width:60px;height:60px;" onclick="myFunction1()">ৰ</button>
+<button style="width:60px;height:60px;" onclick="myFunction2()">ক</button>
+<button style="width:60px;height:60px;" onclick="myFunction3()">ব</button>
+</div><div onclick="location.reload('action://open_app.com')" id="id2"></div>
+<script>
+function myFunction1() {
+  document.getElementById("id1").innerHTML = "<button>ভুল হ’ল, আকৌ চেষ্টা কৰা</button>";
+}
+function myFunction2() {
+  document.getElementById("id1").innerHTML = "<button>সুন্দৰ, তুমি পাৰিলা</button>";
+}
+function myFunction3() {
+  document.getElementById("id1").innerHTML = "<button>ভুল হ’ল</button>";
+  document.getElementById("id2").innerHTML ="আকৌ চেষ্টা কৰা";
+}
+</script>
+</body>
+</html>
